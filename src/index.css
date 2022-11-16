@@ -7,8 +7,24 @@ body,
 #root {
   height: 100vh;
 }
-.Introduction {
+.introduction {
+  display: flex;
+  flex-direction: column;
   background: linear-gradient(to bottom right, #000000 10%, #ffffff 10%, #ffffff 45%, #00b2ff 45%, #00b2ff 55%, rgba(255, 255, 255, 0) 55%);
   height: 100%;
-  border: solid;
+}
+
+.introduction__nav__ul {
+  display: flex;
+  justify-content: right;
+}
+.introduction__nav__ul__li {
+  background-color: white;
+  display: flex;
+}
+.introduction__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
 }

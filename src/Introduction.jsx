@@ -1,26 +1,31 @@
 import React from "react";
 export default function Introduction() {
   return (
-    <div className="Introduction">
-      <nav>
-        <ul>
-          <li>
+    <header className="introduction">
+      <nav className="introduction__nav">
+        <ul className="introduction__nav__ul">
+          <li className="introduction__nav__ul__li">
             <button href="">Hjem</button>
           </li>
-          <li>
+          <li className="introduction__nav__ul__li">
             <button href="">Om meg</button>
           </li>
-          <li>
+          <li className="introduction__nav__ul__li">
             <button href="">Projekter</button>
           </li>
-          <li>
+          <li className="introduction__nav__ul__li">
             <button href="">Kontakt meg</button>
           </li>
-          <li>icon</li>
+          <li className="introduction__nav__ul__li">icon</li>
         </ul>
       </nav>
-      <h1>Hei</h1>
-      <p>mitt navn er Erlend og jeg er en front-end utvikler</p>
-    </div>
+      <div className="introduction__container">
+        <div className="introduction__container__text">
+          <h1 className="introduction__container__text__title">Hei</h1>
+          <p className="introduction__container__text__paragraph">mitt navn er Erlend og jeg er en front-end utvikler</p>
+        </div>
+        <div className="introduction__container__image">image</div>
+      </div>
+    </header>
   );
 }

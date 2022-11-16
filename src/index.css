@@ -3,6 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
+body,
+#root {
   height: 100vh;
+}
+.Introduction {
+  background: linear-gradient(to bottom right, #000000 10%, #ffffff 10%, #ffffff 45%, #00b2ff 45%, #00b2ff 55%, rgba(255, 255, 255, 0) 55%);
+  height: 100%;
+  border: solid;
 }

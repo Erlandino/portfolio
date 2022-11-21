@@ -1,3 +1,4 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +18,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  border: solid;
 }
 .introduction__nav__ul {
   display: flex;
@@ -40,13 +42,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: solid;
 }
 
 .AboutMe__container {
   background-color: #dddddd;
   border-radius: 30px;
+  width: 90%;
   padding: 60px;
-  width: 600px;
 }
 .AboutMe__container__title {
   text-align: center;
@@ -70,18 +73,12 @@ body {
   display: flex;
   justify-content: center;
 }
-.projects__container__carouselContainer__carousel {
-  border: solid;
-  height: 400px;
-  width: 600px;
-}
-.projects__container__carouselContainer {
-  display: flex;
-}
-.projects__container__carouselContainer__button {
-  font-size: 50px;
-  height: auto;
+.projects__container__navigation__button {
+  padding: 30px;
+  border: none;
   cursor: pointer;
+  background-color: #3a4856;
+  color: white;
 }
 
 .Contact {

@@ -1,6 +1,6 @@
 import React from "react";
-import Introduction from "./Introduction";
-import AboutMe from "./About_me";
+import Introduction from "./components/Introduction";
+import AboutMe from "./components/About_me";
 
 function App() {
   return (

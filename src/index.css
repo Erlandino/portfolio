@@ -5,16 +5,19 @@
 }
 body,
 #root {
-  height: 100vh;
+  height: 100%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background: linear-gradient(140deg, #00affa 10%, #ffffff 10%, #ffffff 34%, #00b2ff 34%, #00b2ff 46%, rgba(255, 255, 255, 0) 46%),
+    linear-gradient(40deg, #ffffff 22.15%, #00b2ff 22.15%, #00b2ff 32.86%, #ffffff 32.86%);
 }
 
 .introduction {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 100vh;
 }
-
 .introduction__nav__ul {
   display: flex;
   justify-content: right;
@@ -32,7 +35,7 @@ body,
 }
 
 .AboutMe {
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -54,7 +57,7 @@ body,
 }
 
 .projects {
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -82,7 +85,7 @@ body,
 }
 
 .Contact {
-  height: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -18,6 +18,8 @@ export default function Contact() {
           Beskjed
         </label>
         <textarea id="message" name="message" className="Contact__form__textarea"></textarea>
+
+        <button>Send mail</button>
       </form>
     </section>
   );

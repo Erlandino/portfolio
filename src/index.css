@@ -80,3 +80,18 @@ body,
   height: auto;
   cursor: pointer;
 }
+
+.Contact {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Contact__form {
+  display: flex;
+  flex-direction: column;
+  background-color: #6f6f6f;
+  padding: 40px;
+  border-radius: 30px;
+  color: white;
+}

@@ -1,14 +1,16 @@
 import photo from "../media/placeholder-picture.png";
+import { Link } from "react-router-dom";
+
 export default function Introduction() {
   return (
     <header className="introduction">
       <nav className="introduction__nav">
         <ul className="introduction__nav__ul">
           <li className="introduction__nav__ul__li">
-            <button href="">Hjem</button>
+            <Link to="/#">Hjem</Link>
           </li>
           <li className="introduction__nav__ul__li">
-            <button href="">Om meg</button>
+            <Link to=".AboutMe">Om meg</Link>
           </li>
           <li className="introduction__nav__ul__li">
             <button href="">Projekter</button>

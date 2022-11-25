@@ -35,7 +35,7 @@ body {
   height: 100%;
 }
 
-.AboutMe {
+.aboutMe {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -43,17 +43,17 @@ body {
   align-items: center;
 }
 
-.AboutMe__container {
+.aboutMe__container {
   background-color: #dddddd;
   border-radius: 30px;
   width: 90%;
   padding: 60px;
 }
-.AboutMe__container__title {
+.aboutMe__container__title {
   text-align: center;
   margin-bottom: 20px;
 }
-.AboutMe__container__lineBreak {
+.aboutMe__container__lineBreak {
   margin: 20px 0;
 }
 
@@ -79,17 +79,19 @@ body {
   color: white;
 }
 
-.Contact {
+.contact {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.Contact__form {
+.contact__form {
   display: flex;
   flex-direction: column;
   background-color: #6f6f6f;
   padding: 40px;
   border-radius: 30px;
   color: white;
+  width: 500px;
+  border: solid;
 }

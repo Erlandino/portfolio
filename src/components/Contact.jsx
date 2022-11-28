@@ -19,7 +19,7 @@ export default function Contact() {
         </label>
         <textarea id="message" name="message" className="contact__form__textarea"></textarea>
 
-        <button>Send mail</button>
+        <button className="contact__form__button">Send mail</button>
       </form>
     </section>
   );

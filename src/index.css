@@ -95,3 +95,17 @@ body {
   width: 500px;
   border: solid;
 }
+.contact__form * {
+  border-radius: 10px;
+  border: none;
+  padding: 10px 0;
+  margin: 5px 0;
+}
+.contact__form__button {
+  width: 100px;
+  background-color: #00c21f;
+  color: white;
+}
+.contact__form__textarea {
+  resize: vertical;
+}

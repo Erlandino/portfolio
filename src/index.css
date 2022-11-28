@@ -70,6 +70,9 @@ body {
   background-color: #3a4856;
   color: white;
 }
+.projects__container__carouselContainer {
+  display: flex;
+}
 
 .contact {
   height: 100vh;

@@ -1,17 +1,20 @@
 import ImageGallery from "react-image-gallery";
+import imageOne from "../media/flywing/flywing-frontPage.png";
+import imageTwo from "../media/flywing/flywing-imageGallery.png";
+import imageThree from "../media/flywing/flywing-planeDelayChart.png";
 
 const images = [
   {
-    original: "https://picsum.photos/id/1018/1000/600/",
-    // thumbnail: "https://picsum.photos/id/1018/250/150/",
+    original: imageOne,
+    thumbnail: imageOne,
   },
   {
-    original: "https://picsum.photos/id/1015/1000/600/",
-    // thumbnail: "https://picsum.photos/id/1015/250/150/",
+    original: imageTwo,
+    thumbnail: imageTwo,
   },
   {
-    original: "https://picsum.photos/id/1019/1000/600/",
-    // thumbnail: "https://picsum.photos/id/1019/250/150/",
+    original: imageThree,
+    thumbnail: imageThree,
   },
 ];
 

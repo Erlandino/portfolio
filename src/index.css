@@ -19,14 +19,6 @@ body {
   flex-direction: column;
   height: 100vh;
 }
-.introduction__nav__ul {
-  display: flex;
-  justify-content: right;
-}
-.introduction__nav__ul__li {
-  background-color: white;
-  display: flex;
-}
 .introduction__container {
   display: flex;
   flex-direction: row;
@@ -108,4 +100,27 @@ body {
 }
 .contact__form__textarea {
   resize: vertical;
+}
+
+.nav {
+  display: flex;
+  justify-content: right;
+}
+.nav__ul {
+  position: fixed;
+  padding: 20px 80px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 0px 30px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 60px;
+}
+.nav__ul__li {
+  list-style: none;
+}
+.nav__ul__li__a {
+  color: black;
+  text-decoration: none;
 }

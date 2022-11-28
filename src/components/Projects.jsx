@@ -17,7 +17,7 @@ const images = [
 
 export default function Projects() {
   return (
-    <section className="projects">
+    <section className="projects" id="projects">
       <div className="projects__container">
         <h1 className="projects__container__title">Projekter</h1>
         <div className="projects__container__navigation">

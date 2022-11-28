@@ -2,7 +2,7 @@ import photo from "../media/placeholder-picture.png";
 
 export default function Introduction() {
   return (
-    <header className="introduction">
+    <header className="introduction" id="introduction">
       <div className="introduction__container">
         <div className="introduction__container__text">
           <h1 className="introduction__container__text__title">Hei</h1>

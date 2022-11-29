@@ -73,6 +73,11 @@ body {
 .projects__container__carouselContainer {
   display: flex;
 }
+.projects__container__navigation__button-active {
+  background-color: white;
+  color: black;
+  border: solid #3a4856;
+}
 
 .contact {
   height: 100vh;

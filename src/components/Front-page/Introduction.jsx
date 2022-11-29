@@ -1,4 +1,4 @@
-import photo from "../media/placeholder-picture.png";
+import photo from "../../media/placeholder-picture.png";
 
 export default function Introduction() {
   return (

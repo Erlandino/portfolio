@@ -16,7 +16,7 @@ import StreamingSiteImageTwo from "../../media/newNexus/newNexus-desktop-main-me
 import StreamingSiteImageThree from "../../media/newNexus/newNexus-desktop-main.png";
 
 // Githhub icon import
-import githubIcon from "../../media/GitHub-Mark-64px.png";
+import githubIcon from "../../media/GitHub-Mark-32px.png";
 
 // Figma icon
 import figmaIon from "../../media/figma-logo.svg";
@@ -42,7 +42,7 @@ export default function Projects() {
       figma: "https://www.figma.com/file/EG0HAnVadfGMGMQDkvoX8y/Design-quiz-site?node-id=40%3A4&t=iBoCdhVxGMewcCKF-1",
     },
     {
-      projectName: "solar Quiz",
+      projectName: "Solar Quiz",
       imageOne: solarQuizImageOne,
       imageTwo: solarQuizImageTwo,
       imageThree: solarQuizImageThree,
@@ -74,27 +74,27 @@ export default function Projects() {
             Streaming site design
           </button>
           <button
-            className={`projects__container__navigation__button ${projectName === "solar Quiz" && "projects__container__navigation__button-active"}`}
+            className={`projects__container__navigation__button ${projectName === "Solar Quiz" && "projects__container__navigation__button-active"}`}
             onClick={() => imageGalleryProjectSelect(2)}
           >
             Quiz site
           </button>
         </div>
         <Gallery firstImage={imageOne} secondImage={imageTwo} thirdImage={imageThree} />
-        <ul>
+        <ul className="projects__container__links">
           {github && (
-            <li>
-              <a href={github}>
-                <img src={githubIcon} alt="" />
-                <h2>{projectName} github repository</h2>
+            <li className="projects__container__links__container">
+              <a href={github} target="_blank" className="projects__container__links__container__link">
+                <img src={githubIcon} alt="" className="projects__container__links__container__link__image" />
+                <p className="projects__container__links__container__direction">{projectName} github repository</p>
               </a>
             </li>
           )}
           {figma && (
-            <li>
-              <a href={figma}>
-                <img src={figmaIon} alt="" />
-                <h2>{projectName} figma folder</h2>
+            <li className="projects__container__links__container">
+              <a href={figma} target="_blank" className="projects__container__links__container__link">
+                <img src={figmaIon} alt="" className="projects__container__links__container__link__image" />
+                <p className="projects__container__links__container__direction">{projectName} figma folder</p>
               </a>
             </li>
           )}

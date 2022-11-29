@@ -23,7 +23,7 @@ export default function Gallery(props) {
       <div className="projects__container__navigation">
         <button className={`projects__container__navigation__button ${projectName === "Flywing" && "projects__container__navigation__button-active"}`}>Travel website</button>
         <button className={`projects__container__navigation__button ${projectName === "StreamingSite" && "projects__container__navigation__button-active"}`}>Streaming site design</button>
-        <button className={`projects__container__navigation__button ${projectName === "QuizSite" && "projects__container__navigation__button-active"}`}>Quiz site</button>
+        <button className={`projects__container__navigation__button ${projectName === "solar Quiz" && "projects__container__navigation__button-active"}`}>Quiz site</button>
       </div>
       <div className="projects__container__carouselContainer">
         <ImageGallery items={images} />

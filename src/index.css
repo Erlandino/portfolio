@@ -14,6 +14,7 @@ body {
     linear-gradient(40deg, #ffffff 22.15%, #00b2ff 22.15%, #00b2ff 32.86%, #ffffff 32.86%);
 }
 
+/* Introduction page start */
 .introduction {
   display: flex;
   flex-direction: column;
@@ -26,7 +27,9 @@ body {
   justify-content: center;
   height: 100%;
 }
+/* Introduction page end */
 
+/* About me page start */
 .aboutMe {
   height: 100vh;
   display: flex;
@@ -48,7 +51,9 @@ body {
 .aboutMe__container__lineBreak {
   margin: 20px 0;
 }
+/* About me page end */
 
+/* Projects page start */
 .projects {
   height: 100vh;
   display: flex;
@@ -56,8 +61,17 @@ body {
   justify-content: center;
   align-items: center;
 }
+.projects__container {
+  background-color: #3a4856;
+  padding-bottom: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
 .projects__container__title {
+  padding: 20px;
   text-align: center;
+  color: white;
 }
 .projects__container__navigation {
   display: flex;
@@ -67,13 +81,52 @@ body {
   padding: 30px;
   border: none;
   cursor: pointer;
-  background-color: #3a4856;
   color: white;
+  width: 100%;
+  background-color: #3a4856;
+  font-size: 20px;
 }
 .projects__container__carouselContainer {
   display: flex;
 }
+.projects__container__navigation__button-active {
+  background-color: white;
+  color: black;
+}
+.projects__container__links {
+  display: flex;
+  justify-content: space-around;
+}
+.projects__container__links__container {
+  border: 1px solid #3a4856;
+  border-radius: 10px;
+  padding: 10px;
+  list-style-type: none;
+  background-color: white;
+}
+.projects__container__links__container__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  gap: 5px;
+}
+@media screen and (max-width: 400px) {
+  .projects__container__navigation__button {
+    padding: 15px;
+    font-size: 10px;
+  }
+  .projects__container__title {
+    padding: 10px;
+    font-size: 0.75rem;
+  }
+  .projects__container__links__container__direction {
+    font-size: 10px;
+  }
+}
+/* Projects page end */
 
+/* Contact page start*/
 .contact {
   height: 100vh;
   display: flex;
@@ -104,7 +157,9 @@ body {
 .contact__form__textarea {
   resize: vertical;
 }
+/* Contact page start*/
 
+/* Navbar start*/
 .nav {
   display: flex;
   justify-content: right;
@@ -127,3 +182,4 @@ body {
   color: black;
   text-decoration: none;
 }
+/* Navbar end*/

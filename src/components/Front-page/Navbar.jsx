@@ -35,8 +35,8 @@ export default function Navbar() {
             </HashLink>
           </li>
         )}
-        <li className="nav__ul__li">
-          <img src={hamburgerMenu} alt="Hamburger navbar menu" className="nav__ul__li__img" onClick={() => setShowNavbar((prevState) => !prevState)} />
+        <li className="nav__ul__li" onClick={() => setShowNavbar((prevState) => !prevState)}>
+          <img src={hamburgerMenu} alt="Hamburger navbar menu" className="nav__ul__li__menu" />
         </li>
       </ul>
     </nav>

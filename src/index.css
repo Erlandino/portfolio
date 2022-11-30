@@ -212,7 +212,10 @@ body {
 }
 @media screen and (max-width: 600px) {
   .nav__ul {
-    flex-direction: column-reverse;
+    flex-direction: column;
+  }
+  .nav__ul__li:nth-child(5) {
+    order: -1;
   }
 }
 

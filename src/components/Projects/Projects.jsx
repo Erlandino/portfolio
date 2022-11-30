@@ -83,7 +83,7 @@ export default function Projects() {
         <ul className="projects__container__links">
           {github && (
             <li className="projects__container__links__container">
-              <a href={github} target="_blank" className="projects__container__links__container__link">
+              <a href={github} target="_blank" rel="noreferrer" className="projects__container__links__container__link">
                 <img src={githubIcon} alt="" className="projects__container__links__container__link__image" />
                 <p className="projects__container__links__container__direction">{projectName} github repository</p>
               </a>
@@ -91,7 +91,7 @@ export default function Projects() {
           )}
           {figma && (
             <li className="projects__container__links__container">
-              <a href={figma} target="_blank" className="projects__container__links__container__link">
+              <a href={figma} target="_blank" rel="noreferrer" className="projects__container__links__container__link">
                 <img src={figmaIon} alt="" className="projects__container__links__container__link__image" />
                 <p className="projects__container__links__container__direction">{projectName} figma mappe</p>
               </a>

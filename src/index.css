@@ -121,6 +121,9 @@ body {
   color: black;
   gap: 5px;
 }
+.image-gallery-image {
+  height: 450px;
+}
 @media screen and (max-width: 400px) {
   .projects__container__navigation__button {
     padding: 15px;

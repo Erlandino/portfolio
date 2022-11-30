@@ -56,28 +56,27 @@ export default function Projects() {
   function imageGalleryProjectSelect(index) {
     setImageSet((prevImageSet) => index);
   }
-  console.log(githubIcon);
 
   const { imageOne, imageTwo, imageThree, github, figma, projectName } = projects[imageSet];
   return (
     <section className="projects" id="projects">
       <div className="projects__container">
-        <h1 className="projects__container__title">Projekter</h1>
+        <h1 className="projects__container__title">Prosjekter</h1>
         <div className="projects__container__navigation">
           <button className={`projects__container__navigation__button ${projectName === "Flywing" && "projects__container__navigation__button-active"}`} onClick={() => imageGalleryProjectSelect(0)}>
-            Travel website
+            Flywing side
           </button>
           <button
             className={`projects__container__navigation__button ${projectName === "Streaming site" && "projects__container__navigation__button-active"}`}
             onClick={() => imageGalleryProjectSelect(1)}
           >
-            Streaming site design
+            Streaming side design
           </button>
           <button
             className={`projects__container__navigation__button ${projectName === "Solar Quiz" && "projects__container__navigation__button-active"}`}
             onClick={() => imageGalleryProjectSelect(2)}
           >
-            Quiz site
+            Quiz side
           </button>
         </div>
         <Gallery firstImage={imageOne} secondImage={imageTwo} thirdImage={imageThree} />
@@ -94,7 +93,7 @@ export default function Projects() {
             <li className="projects__container__links__container">
               <a href={figma} target="_blank" className="projects__container__links__container__link">
                 <img src={figmaIon} alt="" className="projects__container__links__container__link__image" />
-                <p className="projects__container__links__container__direction">{projectName} figma folder</p>
+                <p className="projects__container__links__container__direction">{projectName} figma mappe</p>
               </a>
             </li>
           )}

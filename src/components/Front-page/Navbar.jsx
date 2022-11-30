@@ -22,28 +22,28 @@ export default function Navbar() {
         {showNavbar && (
           <li className="nav__ul__li">
             <HashLink className="nav__ul__li__a" smooth to="/path#introduction">
-              Home
+              Hjem
             </HashLink>
           </li>
         )}
         {showNavbar && (
           <li className="nav__ul__li">
             <HashLink className="nav__ul__li__a" smooth to="/path#aboutMe">
-              About me
+              Om meg
             </HashLink>
           </li>
         )}
         {showNavbar && (
           <li className="nav__ul__li">
             <HashLink className="nav__ul__li__a" smooth to="/path#projects">
-              Projects
+              Prosjekter
             </HashLink>
           </li>
         )}
         {showNavbar && (
           <li className="nav__ul__li">
             <HashLink className="nav__ul__li__a" smooth to="/path#contact">
-              Contact
+              Kontakt meg
             </HashLink>
           </li>
         )}

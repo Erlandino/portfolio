@@ -49,17 +49,22 @@ body {
 }
 
 .aboutMe__container {
-  background-color: #dddddd;
+  background-color: #3a4856;
+  color: white;
   border-radius: 30px;
-  width: 90%;
-  padding: 60px;
+  max-width: 800px;
+  padding: 40px;
 }
 .aboutMe__container__title {
   text-align: center;
   margin-bottom: 20px;
+  color: ;
 }
 .aboutMe__container__lineBreak {
   margin: 20px 0;
+}
+.aboutMe__container__article__title {
+  margin-bottom: 50px;
 }
 /* About me page end */
 
@@ -149,7 +154,7 @@ body {
 .contact__form {
   display: flex;
   flex-direction: column;
-  background-color: #6f6f6f;
+  background-color: #3a4856;
   padding: 40px;
   border-radius: 30px;
   color: white;

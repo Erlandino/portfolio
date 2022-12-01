@@ -10,8 +10,9 @@ body,
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 body {
-  background: linear-gradient(140deg, #00affa 10%, #ffffff 10%, #ffffff 34%, #00b2ff 34%, #00b2ff 46%, rgba(255, 255, 255, 0) 46%),
-    linear-gradient(40deg, #ffffff 22.15%, #00b2ff 22.15%, #00b2ff 32.86%, #ffffff 32.86%);
+  /* background: linear-gradient(140deg, #00affa 10%, #ffffff 10%, #ffffff 34%, #00b2ff 34%, #00b2ff 46%, rgba(255, 255, 255, 0) 46%),
+    linear-gradient(40deg, #ffffff 22.15%, #00b2ff 22.15%, #00b2ff 32.86%, #ffffff 32.86%); */
+  background-image: linear-gradient(to right bottom, #00affa, #2d9ad9, #3a86b9, #3f739a, #3f607c, #50657d, #5e6b7d, #6a717d, #8e929c, #b4b5bc, #d9d9dd, #ffffff);
 }
 
 /* Introduction page start */
@@ -19,6 +20,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  color: white;
 }
 .introduction__container {
   display: flex;
@@ -53,6 +55,7 @@ body {
   color: white;
   border-radius: 30px;
   max-width: 800px;
+  max-height: 100%;
   padding: 40px;
 }
 .aboutMe__container__title {
@@ -158,7 +161,7 @@ body {
   border-radius: 30px;
   color: white;
   width: 500px;
-  border: solid;
+  /* border: solid; */
 }
 .contact__form * {
   border-radius: 10px;
@@ -192,6 +195,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  cursor: pointer;
 }
 .nav__ul__li {
   list-style: none;
@@ -210,9 +214,6 @@ body {
   text-decoration: none;
   width: 100%;
   height: 100%;
-}
-.nav__ul__li__menu {
-  cursor: pointer;
 }
 @media screen and (max-width: 600px) {
   .nav__ul {

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portofolio/static/css/main.b4d76ba9.css",
-    "main.js": "/portofolio/static/js/main.c42f5b52.js",
+    "main.css": "/portofolio/static/css/main.b4d9f790.css",
+    "main.js": "/portofolio/static/js/main.f61f4858.js",
     "static/media/flywing-imageGallery.png": "/portofolio/static/media/flywing-imageGallery.218f8c6785f71b554272.png",
     "static/media/newNexus-desktop-main.png": "/portofolio/static/media/newNexus-desktop-main.46a5ff480ba663ea43d6.png",
     "static/media/newNexus-desktop-main-menu.png": "/portofolio/static/media/newNexus-desktop-main-menu.bb23d80a31a8d714c1cc.png",
@@ -13,12 +13,11 @@
     "static/media/solar-quiz-result.png": "/portofolio/static/media/solar-quiz-result.e21e23862f1da8705ce5.png",
     "static/media/figma-logo.svg": "/portofolio/static/media/figma-logo.f52c5eaff479b77b7c05a3db521836e5.svg",
     "index.html": "/portofolio/index.html",
-    "static/media/menu-hamburger.svg": "/portofolio/static/media/menu-hamburger.1232f69dc82f8efa14cbaae1e9ac2346.svg",
-    "main.b4d76ba9.css.map": "/portofolio/static/css/main.b4d76ba9.css.map",
-    "main.c42f5b52.js.map": "/portofolio/static/js/main.c42f5b52.js.map"
+    "main.b4d9f790.css.map": "/portofolio/static/css/main.b4d9f790.css.map",
+    "main.f61f4858.js.map": "/portofolio/static/js/main.f61f4858.js.map"
   },
   "entrypoints": [
-    "static/css/main.b4d76ba9.css",
-    "static/js/main.c42f5b52.js"
+    "static/css/main.b4d9f790.css",
+    "static/js/main.f61f4858.js"
   ]
 }

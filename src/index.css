@@ -259,5 +259,10 @@ body {
   text-decoration: none;
   gap: 10px;
 }
+.footer__list {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
 
 /* Footer end */

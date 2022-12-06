@@ -2,7 +2,7 @@ import { HashLink } from "react-router-hash-link";
 import { useState, useEffect } from "react";
 
 export default function Navbar() {
-  const [showNavbar, setShowNavbar] = useState(true);
+  const [showNavbar, setShowNavbar] = useState(false);
   const [ifHover, setIfHover] = useState(false);
 
   function onHover() {

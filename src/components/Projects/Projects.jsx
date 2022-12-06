@@ -70,7 +70,7 @@ export default function Projects() {
             className={`projects__container__navigation__button ${projectName === "Streaming site" && "projects__container__navigation__button-active"}`}
             onClick={() => imageGalleryProjectSelect(1)}
           >
-            Streaming side design
+            Streaming side
           </button>
           <button
             className={`projects__container__navigation__button ${projectName === "Solar Quiz" && "projects__container__navigation__button-active"}`}

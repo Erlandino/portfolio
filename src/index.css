@@ -89,6 +89,7 @@ body {
   padding: 20px;
   text-align: center;
   color: white;
+  font-size: 24px;
 }
 .projects__container__navigation {
   display: flex;
@@ -101,7 +102,7 @@ body {
   color: white;
   width: 100%;
   background-color: #3a4856;
-  font-size: 20px;
+  font-size: 18px;
 }
 .projects__container__carouselContainer {
   display: flex;
@@ -135,10 +136,6 @@ body {
   .projects__container__navigation__button {
     padding: 15px;
     font-size: 10px;
-  }
-  .projects__container__title {
-    padding: 10px;
-    font-size: 0.75rem;
   }
   .projects__container__links__container__direction {
     font-size: 10px;

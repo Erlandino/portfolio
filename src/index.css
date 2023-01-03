@@ -12,7 +12,21 @@ body,
 body {
   /* background: linear-gradient(140deg, #00affa 10%, #ffffff 10%, #ffffff 34%, #00b2ff 34%, #00b2ff 46%, rgba(255, 255, 255, 0) 46%),
     linear-gradient(40deg, #ffffff 22.15%, #00b2ff 22.15%, #00b2ff 32.86%, #ffffff 32.86%); */
-  background-image: linear-gradient(to right bottom, #00affa, #2d9ad9, #3a86b9, #3f739a, #3f607c, #50657d, #5e6b7d, #6a717d, #8e929c, #b4b5bc, #d9d9dd, #ffffff);
+  background-image: linear-gradient(
+    to right bottom,
+    #00affa,
+    #2d9ad9,
+    #3a86b9,
+    #3f739a,
+    #3f607c,
+    #50657d,
+    #5e6b7d,
+    #6a717d,
+    #8e929c,
+    #b4b5bc,
+    #d9d9dd,
+    #ffffff
+  );
 }
 
 /* Introduction page start */
@@ -160,6 +174,7 @@ body {
   align-items: center;
 }
 .contact__form {
+  text-align: left;
   display: flex;
   flex-direction: column;
   background-color: #3a4856;
@@ -179,9 +194,43 @@ body {
   width: 100px;
   background-color: #00c21f;
   color: white;
+  cursor: pointer;
+}
+.contact__form__input {
+  height: 40px;
+  padding: 0px 5px;
+}
+.contact__form__input:focus {
+  outline: 2px solid black;
 }
 .contact__form__textarea {
   resize: vertical;
+  height: 100px;
+  padding: 6px 6px;
+}
+.contact__form__textarea:focus {
+  outline: 2px solid black;
+}
+.contact__form__errorMessage {
+  color: red;
+  padding-left: 10px;
+  border: 2px solid red;
+  font-style: oblique;
+  background-color: rgb(255, 195, 195);
+}
+.error {
+  border: 2px solid red;
+}
+.error:focus {
+  outline: 2px solid red;
+}
+.contact__form__successMessage {
+  color: rgb(255, 255, 255);
+  padding-left: 10px;
+  border: 2px solid rgb(0, 255, 0);
+  font-style: oblique;
+  background-color: rgb(91, 160, 94);
+  text-align: center;
 }
 /* Contact page start*/
 

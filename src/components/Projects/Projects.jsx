@@ -1,3 +1,4 @@
+// Imports
 import Gallery from "./Gallery";
 
 // Flywing images imports
@@ -18,12 +19,14 @@ import StreamingSiteImageThree from "../../media/newNexus/newNexus-desktop-main.
 // Githhub icon import
 import githubIcon from "../../media/GitHub-Mark-32px.png";
 
-// Figma icon
+// Figma icon import
 import figmaIon from "../../media/figma-logo.svg";
 
 import { useState } from "react";
 
+// Projects component
 export default function Projects() {
+  // Array with projects in groups
   const projects = [
     {
       projectName: "Flywing",
@@ -39,7 +42,8 @@ export default function Projects() {
       imageTwo: StreamingSiteImageTwo,
       imageThree: StreamingSiteImageThree,
       github: "",
-      figma: "https://www.figma.com/file/EG0HAnVadfGMGMQDkvoX8y/Design-quiz-site?node-id=40%3A4&t=iBoCdhVxGMewcCKF-1",
+      figma:
+        "https://www.figma.com/file/EG0HAnVadfGMGMQDkvoX8y/Design-quiz-site?node-id=40%3A4&t=iBoCdhVxGMewcCKF-1",
     },
     {
       projectName: "Solar Quiz",
@@ -47,53 +51,105 @@ export default function Projects() {
       imageTwo: solarQuizImageTwo,
       imageThree: solarQuizImageThree,
       github: "https://github.com/Erlandino/autmn-project",
-      figma: "https://www.figma.com/file/EG0HAnVadfGMGMQDkvoX8y/Design-quiz-site?node-id=40%3A4&t=iBoCdhVxGMewcCKF-1",
+      figma:
+        "https://www.figma.com/file/EG0HAnVadfGMGMQDkvoX8y/Design-quiz-site?node-id=40%3A4&t=iBoCdhVxGMewcCKF-1",
     },
   ];
 
+  // UseState that contains an index of the projects array above
   const [imageSet, setImageSet] = useState(0);
 
+  // sets imageSet to be the number in the index parameter, which will be the number that the function is called with
   function imageGalleryProjectSelect(index) {
     setImageSet((prevImageSet) => index);
   }
 
+  // Destructuring of projects object
   const { imageOne, imageTwo, imageThree, github, figma, projectName } = projects[imageSet];
   return (
+    // Section
     <section className="projects" id="projects">
+      {/* Projects container */}
       <div className="projects__container">
+        {/* Title */}
         <h1 className="projects__container__title">Prosjekter</h1>
+        {/* Projects navigation container */}
         <div className="projects__container__navigation">
-          <button className={`projects__container__navigation__button ${projectName === "Flywing" && "projects__container__navigation__button-active"}`} onClick={() => imageGalleryProjectSelect(0)}>
+          {/* Button for flywing site */}
+          <button
+            className={`projects__container__navigation__button ${
+              projectName === "Flywing" && "projects__container__navigation__button-active"
+            }`}
+            onClick={() => imageGalleryProjectSelect(0)}
+          >
             Flywing side
           </button>
+          {/* Button for streaming site */}
           <button
-            className={`projects__container__navigation__button ${projectName === "Streaming site" && "projects__container__navigation__button-active"}`}
+            className={`projects__container__navigation__button ${
+              projectName === "Streaming site" && "projects__container__navigation__button-active"
+            }`}
             onClick={() => imageGalleryProjectSelect(1)}
           >
             Streaming side
           </button>
+          {/* Button for quiz site */}
           <button
-            className={`projects__container__navigation__button ${projectName === "Solar Quiz" && "projects__container__navigation__button-active"}`}
+            className={`projects__container__navigation__button ${
+              projectName === "Solar Quiz" && "projects__container__navigation__button-active"
+            }`}
             onClick={() => imageGalleryProjectSelect(2)}
           >
             Quiz side
           </button>
         </div>
+        {/* Gallery component, images are being sent as props to create a gallery in the component*/}
         <Gallery firstImage={imageOne} secondImage={imageTwo} thirdImage={imageThree} />
+        {/* Link list */}
         <ul className="projects__container__links">
+          {/* Only shows if there is a github link for the project */}
           {github && (
+            // List item
             <li className="projects__container__links__container">
-              <a href={github} target="_blank" rel="noreferrer" className="projects__container__links__container__link">
-                <img src={githubIcon} alt="" className="projects__container__links__container__link__image" />
-                <p className="projects__container__links__container__direction">{projectName} github repository</p>
+              {/* Link to github repository */}
+              <a
+                href={github}
+                target="_blank"
+                rel="noreferrer"
+                className="projects__container__links__container__link"
+              >
+                <img
+                  src={githubIcon}
+                  alt=""
+                  className="projects__container__links__container__link__image"
+                />
+                {/* Descriptive text */}
+                <p className="projects__container__links__container__direction">
+                  {projectName} github repository
+                </p>
               </a>
             </li>
           )}
+          {/* Only shows if there is a figma link for the project */}
           {figma && (
+            // List item
             <li className="projects__container__links__container">
-              <a href={figma} target="_blank" rel="noreferrer" className="projects__container__links__container__link">
-                <img src={figmaIon} alt="" className="projects__container__links__container__link__image" />
-                <p className="projects__container__links__container__direction">{projectName} figma mappe</p>
+              {/* Link to figma file */}
+              <a
+                href={figma}
+                target="_blank"
+                rel="noreferrer"
+                className="projects__container__links__container__link"
+              >
+                <img
+                  src={figmaIon}
+                  alt=""
+                  className="projects__container__links__container__link__image"
+                />
+                {/* Descriptive text */}
+                <p className="projects__container__links__container__direction">
+                  {projectName} figma mappe
+                </p>
               </a>
             </li>
           )}

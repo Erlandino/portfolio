@@ -116,7 +116,7 @@ export default function Contact() {
           type="text"
           id="user_name"
           name="user_name"
-          onBlur={verifyInput}
+          // onBlur={verifyInput}
           className="contact__form__input"
         />
         {/* Name error message */}
@@ -131,7 +131,7 @@ export default function Contact() {
           type="email"
           id="user_email"
           name="user_email"
-          onBlur={verifyInput}
+          // onBlur={verifyInput}
           className="contact__form__input"
         />
         {/* Email error message */}
@@ -145,7 +145,7 @@ export default function Contact() {
         <textarea
           id="user_message"
           name="user_message"
-          onBlur={verifyInput}
+          // onBlur={verifyInput}
           className="contact__form__textarea"
         ></textarea>
         {/* Message error message */}

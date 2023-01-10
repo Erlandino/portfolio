@@ -41,8 +41,10 @@ export default function Contact() {
         .then(
           (result) => {
             // if Successful
-            console.log(result.text);
             form.current.childNodes[11].style.display = "block";
+            for (let i = 0; i < 11; i++) {
+              form.current.childNodes[i].style.display = "none";
+            }
           },
           // if Unsuccessful
           (error) => {

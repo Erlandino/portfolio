@@ -66,30 +66,40 @@ body {
 
 /* About me page start */
 .aboutMe {
-  min-height: 100vh;
+  /* height: 100vh;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  align-items: center;
-}
-
-.aboutMe__container {
+  justify-content: center;
+  align-items: center; */
+  padding: 30px;
+  padding-bottom: 60px;
   background-color: #3a4856;
   color: white;
-  border-radius: 30px;
-  max-width: 800px;
-  max-height: 100%;
-  padding: 40px;
 }
 .aboutMe__container__title {
+  margin-bottom: 40px;
   text-align: center;
-  margin-bottom: 20px;
 }
-.aboutMe__container__lineBreak {
-  margin: 20px 0;
+.aboutMe__container__articles__article {
+  max-width: 500px;
+  width: 40%;
 }
-.aboutMe__container__article__title {
-  margin-bottom: 50px;
+.aboutMe__container__articles {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* gap: 200px; */
+  width: 100%;
+  height: 100%;
+  gap: 40px;
+}
+@media screen and (max-width: 400px) {
+  .aboutMe__container__articles {
+    flex-direction: column;
+  }
+  .aboutMe__container__articles__article {
+    width: 100%;
+  }
 }
 /* About me page end */
 
@@ -168,16 +178,16 @@ body {
 
 /* Contact page start*/
 .contact {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #3a4856;
 }
 .contact__form {
   text-align: left;
   display: flex;
   flex-direction: column;
-  background-color: #3a4856;
   padding: 40px;
   border-radius: 30px;
   color: white;

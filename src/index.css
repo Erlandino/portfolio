@@ -127,6 +127,7 @@ body {
 .projects__container__navigation {
   display: flex;
   justify-content: center;
+  /* border-top: white solid; */
 }
 .projects__container__navigation__button {
   padding: 30px;
@@ -136,6 +137,10 @@ body {
   width: 100%;
   background-color: #3a4856;
   font-size: 18px;
+}
+.projects__container__navigation__button:hover {
+  background-color: white;
+  color: black;
 }
 .projects__container__carouselContainer {
   display: flex;
@@ -151,9 +156,9 @@ body {
 .projects__container__links__container {
   border: 1px solid #3a4856;
   border-radius: 10px;
-  padding: 10px;
   list-style-type: none;
   background-color: white;
+  margin-top: 20px;
 }
 .projects__container__links__container__link {
   display: flex;
@@ -161,6 +166,10 @@ body {
   text-decoration: none;
   color: black;
   gap: 5px;
+  padding: 10px;
+}
+.projects__container__links__container__link:hover {
+  opacity: 0.8;
 }
 .image-gallery-content .image-gallery-slide .image-gallery-image {
   max-height: 400px;
@@ -201,10 +210,13 @@ body {
   margin: 5px 0;
 }
 .contact__form__button {
-  width: 100px;
+  width: 100%;
   background-color: #00c21f;
   color: white;
   cursor: pointer;
+}
+.contact__form__button:hover {
+  opacity: 0.8;
 }
 .contact__form__input {
   height: 40px;
@@ -323,6 +335,9 @@ body {
   color: black;
   text-decoration: none;
   gap: 10px;
+}
+.footer__list__item__link:hover {
+  opacity: 0.8;
 }
 .footer__list {
   display: flex;

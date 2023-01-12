@@ -10,15 +10,12 @@ export default function Gallery(props) {
   const images = [
     {
       original: firstImage,
-      thumbnail: firstImage,
     },
     {
       original: secondImage,
-      thumbnail: secondImage,
     },
     {
       original: thirdImage,
-      thumbnail: thirdImage,
     },
   ];
   return (

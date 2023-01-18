@@ -105,7 +105,7 @@ export default function Contact() {
       {/* Form container */}
       <form ref={form} onSubmit={sendEmail} className="contact__form">
         {/* Title of section */}
-        <h2>Kontakt skjema</h2>
+        <h2 className="contact__form__title">Kontakt skjema</h2>
 
         {/* Name label */}
         <label htmlFor="user_name" className="contact__form__label">

@@ -28,7 +28,24 @@ body {
     #ffffff
   );
 }
-
+/* weatherApi */
+.weatherApi {
+  position: absolute;
+  justify-content: center;
+  padding: 40px;
+  color: white;
+  font-size: 30px;
+}
+.weatherApi__iconTempContainer {
+  display: flex;
+  align-items: center;
+}
+.weatherApi__iconTempContainer__icon {
+  height: 60px;
+}
+.weatherApi__city {
+  text-align: center;
+}
 /* Introduction page start */
 .introduction {
   display: flex;
@@ -79,6 +96,7 @@ body {
 .aboutMe__container__title {
   margin-bottom: 40px;
   text-align: center;
+  font-size: 34px;
 }
 .aboutMe__container__articles__article {
   max-width: 500px;
@@ -107,9 +125,27 @@ body {
 .projects {
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin: 60px 0;
+}
+.projects__description {
+  max-width: 30%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+  color: white;
+  gap: 60px;
+  background-color: #9b6a6c;
+  border-radius: 0 30px 30px 0;
+}
+.projects__description__title {
+  font-size: 34px;
+}
+.projects__description__paragraph {
+  line-height: 180%;
+  letter-spacing: 5%;
 }
 .projects__container {
   background-color: #3a4856;
@@ -122,12 +158,12 @@ body {
   padding: 20px;
   text-align: center;
   color: white;
-  font-size: 24px;
+  font-size: 34px;
 }
 .projects__container__navigation {
   display: flex;
   justify-content: center;
-  /* border-top: white solid; */
+  border-top: 1px white solid;
 }
 .projects__container__navigation__button {
   padding: 30px;
@@ -149,6 +185,7 @@ body {
   background-color: white;
   color: black;
 }
+
 .projects__container__links {
   display: flex;
   justify-content: space-around;
@@ -183,6 +220,22 @@ body {
     font-size: 10px;
   }
 }
+@media screen and (max-width: 800px) {
+  .projects {
+    display: flex;
+    flex-direction: column;
+  }
+  .projects__description {
+    border-radius: 0 0px 30px 30px;
+    max-width: none;
+  }
+  .projects__container {
+    border-radius: 30px 30px 0 0;
+  }
+  .projects__description__title {
+    font-size: 28px;
+  }
+}
 /* Projects page end */
 
 /* Contact page start*/
@@ -202,6 +255,9 @@ body {
   color: white;
   width: 500px;
   /* border: solid; */
+}
+.contact__form__title {
+  font-size: 34px;
 }
 .contact__form * {
   border-radius: 10px;
@@ -315,7 +371,6 @@ body {
     border-radius: 0 0 0 30px;
   }
 }
-
 /* Navbar end*/
 
 /* Footer */

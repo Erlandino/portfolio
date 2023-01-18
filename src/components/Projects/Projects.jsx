@@ -35,6 +35,8 @@ export default function Projects() {
       imageThree: flywingImageThree,
       github: "https://github.com/Erlandino/portofolio",
       figma: "",
+      description:
+        "A css/html project with a little bit of javascript in it. Main focus was to practice html and css. website is made to be responsive for mobile phones",
     },
     {
       projectName: "Streaming site",
@@ -44,6 +46,8 @@ export default function Projects() {
       github: "",
       figma:
         "https://www.figma.com/file/EG0HAnVadfGMGMQDkvoX8y/Design-quiz-site?node-id=40%3A4&t=iBoCdhVxGMewcCKF-1",
+      description:
+        "This was a project made only in figma. In this project the goal was to showcase the different tools available in figma and that i could use them. The website is intended to be a combination of a video game streaming platform like twitch and movie show streaming sites like netflix.",
     },
     {
       projectName: "Solar Quiz",
@@ -53,6 +57,8 @@ export default function Projects() {
       github: "https://github.com/Erlandino/autmn-project",
       figma:
         "https://www.figma.com/file/EG0HAnVadfGMGMQDkvoX8y/Design-quiz-site?node-id=40%3A4&t=iBoCdhVxGMewcCKF-1",
+      description:
+        "In this project i was working together with others in a group. We shared a figma folder to design together and github to share and validate each others code. In this project i learned how to use git and github",
     },
   ];
 
@@ -65,7 +71,8 @@ export default function Projects() {
   }
 
   // Destructuring of projects object
-  const { imageOne, imageTwo, imageThree, github, figma, projectName } = projects[imageSet];
+  const { imageOne, imageTwo, imageThree, github, figma, projectName, description } =
+    projects[imageSet];
   return (
     // Section
     <section className="projects" id="projects">
@@ -154,6 +161,10 @@ export default function Projects() {
             </li>
           )}
         </ul>
+      </div>
+      <div className="projects__description">
+        <h1 className="projects__description__title">{projectName}</h1>
+        <p className="projects__description__paragraph">{description}</p>
       </div>
     </section>
   );

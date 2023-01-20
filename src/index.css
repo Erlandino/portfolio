@@ -128,7 +128,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 60px 0;
+  margin: 60px 10px;
 }
 .projects__description {
   max-width: 30%;
@@ -220,10 +220,14 @@ body {
     font-size: 10px;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 950px) {
   .projects {
     display: flex;
     flex-direction: column;
+    margin: 60px 0;
+  }
+  .image-gallery-content .image-gallery-slide .image-gallery-image {
+    max-height: none;
   }
   .projects__description {
     border-radius: 0 0px 30px 30px;
@@ -231,6 +235,7 @@ body {
   }
   .projects__container {
     border-radius: 0px 0px 0 0;
+    width: 100%;
   }
   .projects__description__title {
     font-size: 28px;

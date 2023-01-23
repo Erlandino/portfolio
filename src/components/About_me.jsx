@@ -18,12 +18,15 @@ export default function AboutMe() {
             <h2 className="aboutMe__container__articles__article__title">Koding</h2>
             {/* Paragraph */}
             <p className="aboutMe__container__articles__article__paragraph">
-              Jeg liker å kode, og et av grunnen for dette er fordi at det gjør at jeg kan bruke
-              kreativitet til å skape noe, for eksempel image karusell.
+              Jeg liker å kode, og et av grunnen for dette er fordi at jeg kan bruke kreativitet min
+              til å skape noe jeg har sett og brukt flere steder på nettet før, for eksempel en
+              image karusell.
               <br />
               <br />
               Jeg liker også å jobbe med javascript siden kode språket er ganske logisk. Dette gjør
-              at måten man finner løsninger er ganske steg for steg som føles godt når du løser det
+              at man raskt finner løsninger på hvordan man kan skape noe. Hovedfokus da blir jo å
+              optimalisere koden slik at den blir leselig, kort og forstålig. Og når jeg da oppnår
+              en effectiv kode for et proejekt føles det godt.
             </p>
           </article>
           {/* Linebreak */}

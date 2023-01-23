@@ -19,7 +19,7 @@ export default function WeatherApi() {
     try {
       // api call
       const res = await fetch(
-        `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&units=imperial&appid=${process.env.REACT_APP_WEATHER_API_KEY}`
+        `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&units=metric&appid=${process.env.REACT_APP_WEATHER_API_KEY}`
       );
       // throws error if there is an error with the api call
       if (!res.ok) {

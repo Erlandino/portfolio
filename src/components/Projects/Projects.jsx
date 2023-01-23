@@ -6,15 +6,19 @@ import flywingImageOne from "../../media/flywing/flywing-frontPage.png";
 import flywingImageTwo from "../../media/flywing/flywing-imageGallery.png";
 import flywingImageThree from "../../media/flywing/flywing-planeDelayChart.png";
 
+// Streaming site images imports
+import christmasCountdownOne from "../../media/christmas-countdown/jule-nedtelling.png";
+import christmasCountdownTwo from "../../media/christmas-countdown/julehilse.png";
+import christmasCountdownThree from "../../media/christmas-countdown/julehilser.png";
+
 // Solar quiz images imports
 import solarQuizImageOne from "../../media/solar-quiz/solar-quiz-registration.png";
 import solarQuizImageTwo from "../../media/solar-quiz/solar-quiz-result.png";
 import solarQuizImageThree from "../../media/solar-quiz/solar-quiz.png";
 
-// Streaming site images imports
-import StreamingSiteImageOne from "../../media/newNexus/newNexus-desktop-contact.png";
-import StreamingSiteImageTwo from "../../media/newNexus/newNexus-desktop-main-menu.png";
-import StreamingSiteImageThree from "../../media/newNexus/newNexus-desktop-main.png";
+// import solarQuizImageOne from "../../media/christmas-countdown/jule-nedtelling.png";
+// import solarQuizImageTwo from "../../media/christmas-countdown/julehilse.png";
+// import solarQuizImageThree from "../../media/christmas-countdown/julehilser.png";
 
 // Githhub icon import
 import githubIcon from "../../media/GitHub-Mark-32px.png";
@@ -29,25 +33,15 @@ export default function Projects() {
   // Array with projects in groups
   const projects = [
     {
-      projectName: "Flywing",
-      imageOne: flywingImageOne,
-      imageTwo: flywingImageTwo,
-      imageThree: flywingImageThree,
-      github: "https://github.com/Erlandino/portofolio",
-      figma: "",
-      description:
-        "A css/html project with a little bit of javascript in it. Main focus was to practice html and css. website is made to be responsive for mobile phones",
-    },
-    {
-      projectName: "Streaming site",
-      imageOne: StreamingSiteImageOne,
-      imageTwo: StreamingSiteImageTwo,
-      imageThree: StreamingSiteImageThree,
-      github: "",
+      projectName: "Jule Nedtelling",
+      imageOne: christmasCountdownOne,
+      imageTwo: christmasCountdownTwo,
+      imageThree: christmasCountdownThree,
+      github: "https://github.com/Erlandino/Christmas-task",
       figma:
-        "https://www.figma.com/file/EG0HAnVadfGMGMQDkvoX8y/Design-quiz-site?node-id=40%3A4&t=iBoCdhVxGMewcCKF-1",
+        "https://www.figma.com/file/cPIkeXKbLLojYG7EyJXObd/ChristmasCalender?node-id=2%3A33&t=voO52qHem3ftnr1A-1",
       description:
-        "This was a project made only in figma. In this project the goal was to showcase the different tools available in figma and that i could use them. The website is intended to be a combination of a video game streaming platform like twitch and movie show streaming sites like netflix.",
+        "Her har jeg lagget en jule nedtellings klokke og et kommentar felt for jullehilser. Dette projektet ble da laget i react js og designet på figma. Jeg måtte bruke react hooks som useEffect og useState får å lage nedtellings systemet og kommentarfeltet.",
     },
     {
       projectName: "Solar Quiz",
@@ -58,10 +52,19 @@ export default function Projects() {
       figma:
         "https://www.figma.com/file/EG0HAnVadfGMGMQDkvoX8y/Design-quiz-site?node-id=40%3A4&t=iBoCdhVxGMewcCKF-1",
       description:
-        "In this project i was working together with others in a group. We shared a figma folder to design together and github to share and validate each others code. In this project i learned how to use git and github",
+        "I dette projektet har jeg jobbet sammen med andre i en gruppe. Vi delte en figma projekt mappe hvor vi designet og bestemte wireframe, styleguide og web side design. Vi brukte også github får å validere , samle og sikre koden våres.",
+    },
+    {
+      projectName: "Flywing",
+      imageOne: flywingImageOne,
+      imageTwo: flywingImageTwo,
+      imageThree: flywingImageThree,
+      github: "https://github.com/Erlandino/Flywing-website",
+      figma: "",
+      description:
+        "Flywing projektet består mest av css og html men det er også litt javascript i projektet. Siden er laget med fokus på responsive design og får å teste ut css ferdigheter.",
     },
   ];
-
   // UseState that contains an index of the projects array above
   const [imageSet, setImageSet] = useState(0);
 
@@ -83,31 +86,31 @@ export default function Projects() {
         {/* Projects navigation container */}
         <div className="projects__container__navigation">
           {/* Button for flywing site */}
-          <button
-            className={`projects__container__navigation__button ${
-              projectName === "Flywing" && "projects__container__navigation__button-active"
-            }`}
-            onClick={() => imageGalleryProjectSelect(0)}
-          >
-            Flywing side
-          </button>
           {/* Button for streaming site */}
           <button
             className={`projects__container__navigation__button ${
-              projectName === "Streaming site" && "projects__container__navigation__button-active"
+              projectName === "Jule Nedtelling" && "projects__container__navigation__button-active"
             }`}
-            onClick={() => imageGalleryProjectSelect(1)}
+            onClick={() => imageGalleryProjectSelect(0)}
           >
-            Streaming side
+            Jule Nedtelling
           </button>
           {/* Button for quiz site */}
           <button
             className={`projects__container__navigation__button ${
               projectName === "Solar Quiz" && "projects__container__navigation__button-active"
             }`}
-            onClick={() => imageGalleryProjectSelect(2)}
+            onClick={() => imageGalleryProjectSelect(1)}
           >
             Quiz side
+          </button>
+          <button
+            className={`projects__container__navigation__button ${
+              projectName === "Flywing" && "projects__container__navigation__button-active"
+            }`}
+            onClick={() => imageGalleryProjectSelect(2)}
+          >
+            Flywing side
           </button>
         </div>
         {/* Gallery component, images are being sent as props to create a gallery in the component*/}

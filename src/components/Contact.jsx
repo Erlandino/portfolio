@@ -2,6 +2,7 @@
 import React, { useRef } from "react";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import mail from "../media/mail.png";
 
 // Contact component
 export default function Contact() {
@@ -12,6 +13,7 @@ export default function Contact() {
     beskjed: false,
     firstLoad: true,
   });
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   // creates an object of form inputs and textareas
   const form = useRef();
@@ -41,10 +43,12 @@ export default function Contact() {
         .then(
           (result) => {
             // if Successful
-            form.current.childNodes[11].style.display = "block";
+            console.log(result.text);
             for (let i = 0; i < 11; i++) {
               form.current.childNodes[i].style.display = "none";
             }
+            form.current.childNodes[11].style.display = "block";
+            setIsSubmitted((prevState) => true);
           },
           // if Unsuccessful
           (error) => {
@@ -104,10 +108,12 @@ export default function Contact() {
   return (
     // Section container
     <section className="contact" id="contact">
+      {/* image of a person holding a letter */}
+      {!isSubmitted && <img src={mail} alt="a person holding a letter" className="contact__mail" />}
       {/* Form container */}
       <form ref={form} onSubmit={sendEmail} className="contact__form">
         {/* Title of section */}
-        <h2>Kontakt skjema</h2>
+        <h2 className="contact__form__title">Send mail</h2>
 
         {/* Name label */}
         <label htmlFor="user_name" className="contact__form__label">

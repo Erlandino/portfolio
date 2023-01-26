@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portofolio/static/css/main.274ef38a.css",
-    "main.js": "/portofolio/static/js/main.831ec210.js",
+    "main.js": "/portofolio/static/js/main.cfffc924.js",
     "static/media/photo.JPG": "/portofolio/static/media/photo.ac881ab3669b80443678.JPG",
     "static/media/flywing-imageGallery.png": "/portofolio/static/media/flywing-imageGallery.218f8c6785f71b554272.png",
     "static/media/jule-nedtelling.png": "/portofolio/static/media/jule-nedtelling.46c3022fabb0e5490d3e.png",
@@ -16,10 +16,10 @@
     "static/media/figma-logo.svg": "/portofolio/static/media/figma-logo.f52c5eaff479b77b7c05a3db521836e5.svg",
     "index.html": "/portofolio/index.html",
     "main.274ef38a.css.map": "/portofolio/static/css/main.274ef38a.css.map",
-    "main.831ec210.js.map": "/portofolio/static/js/main.831ec210.js.map"
+    "main.cfffc924.js.map": "/portofolio/static/js/main.cfffc924.js.map"
   },
   "entrypoints": [
     "static/css/main.274ef38a.css",
-    "static/js/main.831ec210.js"
+    "static/js/main.cfffc924.js"
   ]
 }

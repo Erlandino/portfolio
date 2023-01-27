@@ -119,7 +119,6 @@ export default function Projects() {
           >
             Jule nedtelling
           </button>
-          <hr style={{ margin: "20px 0 30px" }} />
           {/* Button for quiz site */}
           <button
             className={`projects__container__navigation__button ${
@@ -129,7 +128,6 @@ export default function Projects() {
           >
             Quiz side
           </button>
-          <hr style={{ margin: "20px 0 30px" }} />
 
           {/* Button for quiz site Rock paper scissors site*/}
           <button

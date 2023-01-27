@@ -172,28 +172,29 @@ body {
 }
 .projects__container__navigation {
   display: flex;
-  justify-content: center;
-  border-top: 1px white solid;
+  justify-content: space-evenly;
+  gap: 10px;
+  margin: 0 20px;
 }
 .projects__container__navigation__button {
-  padding: 30px;
   border: none;
   cursor: pointer;
   color: white;
-  width: 100%;
+  padding: 15px;
   background-color: #3a4856;
   font-size: 18px;
+  border-radius: 30px;
+  transition: background-color 0.5s;
+  margin-bottom: 10px;
 }
 .projects__container__navigation__button:hover {
-  background-color: white;
-  color: black;
+  background-color: rgb(41, 41, 255);
 }
 .projects__container__carouselContainer {
   display: flex;
 }
 .projects__container__navigation__button-active {
-  background-color: white;
-  color: black;
+  background-color: rgb(41, 41, 255);
 }
 
 .projects__container__links {
@@ -218,8 +219,9 @@ body {
 .projects__container__links__container__link:hover {
   opacity: 0.8;
 }
-.image-gallery-content .image-gallery-slide .image-gallery-image {
-  max-height: 400px;
+.image-gallery-fullscreen-button,
+.image-gallery-play-button {
+  display: none;
 }
 @media screen and (max-width: 400px) {
   .projects__container__navigation__button {

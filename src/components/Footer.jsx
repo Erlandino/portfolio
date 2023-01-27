@@ -16,12 +16,12 @@ export default function Footer() {
           {/* Link to github portofolio code */}
           <a
             className="footer__list__item__link"
-            href="https://github.com/Erlandino/portofolio"
+            href="https://github.com/Erlandino"
             target="_blanc"
           >
             {/* Image of github logo */}
-            <img className="footer__list__item__link__img" src={githubIcon} alt="" /> Portofolio
-            github repository
+            <img className="footer__list__item__link__img" src={githubIcon} alt="" />
+            Github profile
           </a>
         </li>
 
@@ -38,7 +38,6 @@ export default function Footer() {
           >
             {/* Image of figma icon */}
             <img className="footer__list__item__link__img" src={figmaIon} alt="" /> Portofolio
-            design folder
           </a>
         </li>
       </ul>

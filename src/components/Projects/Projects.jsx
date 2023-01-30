@@ -52,6 +52,15 @@ export default function Projects() {
       });
   }, []);
 
+  const pullData = (data) => {
+    console.log(data); // LOGS DATA FROM CHILD
+    data.classList.remove("projects__container__carouselContainer__imageChange");
+    setTimeout(() =>
+      data.classList.add("projects__container__carouselContainer__imageChange", 1000)
+    );
+    // data.classList.remove("projects__container__carouselContainer__imageChange");
+  };
+
   // Array with projects info, pictures and logos in objects
   // changes image according to the size of viewport width
   const projects = [
@@ -141,7 +150,12 @@ export default function Projects() {
           </button>
         </div>
         {/* Gallery component, images are being sent as props to create a gallery in the component*/}
-        <Gallery firstImage={imageOne} secondImage={imageTwo} thirdImage={imageThree} />
+        <Gallery
+          pullData={pullData}
+          firstImage={imageOne}
+          secondImage={imageTwo}
+          thirdImage={imageThree}
+        />
         {/* Link list */}
         <ul className="projects__container__links">
           {/* Only shows if there is a github link for the project */}

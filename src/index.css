@@ -93,11 +93,6 @@ body {
 
 /* About me page start */
 .aboutMe {
-  /* height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
   padding: 30px;
   padding-bottom: 60px;
   background-color: #3a4856;
@@ -116,7 +111,6 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* gap: 200px; */
   width: 100%;
   height: 100%;
   gap: 40px;
@@ -203,20 +197,21 @@ body {
 
 .projects__container__links {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .projects__container__links__container {
   border: 1px solid #3a4856;
   border-radius: 10px;
   list-style-type: none;
-  background-color: white;
+  background-color: rgb(41, 41, 255);
   margin-top: 20px;
+  box-shadow: 0 0.25px 1px 0 black;
 }
 .projects__container__links__container__link {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: black;
+  color: white;
   gap: 5px;
   padding: 10px;
 }
@@ -226,6 +221,18 @@ body {
 .image-gallery-fullscreen-button,
 .image-gallery-play-button {
   display: none;
+}
+.projects__container__carouselContainer__imageChange {
+  opacity: 0;
+  animation: 4s imageTransition forwards;
+}
+@keyframes imageTransition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @media screen and (max-width: 950px) {
   .projects {
@@ -255,17 +262,21 @@ body {
   .projects__container__navigation__button {
     width: 100%;
     font-size: 3vw;
-    /* margin: 0; */
   }
   .projects__container__links__container__direction {
     font-size: 10px;
+  }
+  .projects__container__title {
+    padding: 10px 0;
+  }
+  .projects__container__links__container {
+    width: 30%;
   }
 }
 /* Projects page end */
 
 /* Contact page start*/
 .contact {
-  /* min-height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -285,7 +296,6 @@ body {
   border-radius: 30px;
   color: white;
   width: 500px;
-  /* border: solid; */
 }
 .contact__form__title {
   font-size: 34px;

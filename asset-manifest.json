@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portofolio/static/css/main.93462b86.css",
-    "main.js": "/portofolio/static/js/main.232a4048.js",
+    "main.js": "/portofolio/static/js/main.96a52d68.js",
     "static/media/photo.JPG": "/portofolio/static/media/photo.ac881ab3669b80443678.JPG",
     "static/media/jule-nedtelling.png": "/portofolio/static/media/jule-nedtelling.46c3022fabb0e5490d3e.png",
     "static/media/julehilse.png": "/portofolio/static/media/julehilse.b8282d09d431ea924687.png",
@@ -26,10 +26,10 @@
     "static/media/figma-logo.svg": "/portofolio/static/media/figma-logo.f52c5eaff479b77b7c05a3db521836e5.svg",
     "index.html": "/portofolio/index.html",
     "main.93462b86.css.map": "/portofolio/static/css/main.93462b86.css.map",
-    "main.232a4048.js.map": "/portofolio/static/js/main.232a4048.js.map"
+    "main.96a52d68.js.map": "/portofolio/static/js/main.96a52d68.js.map"
   },
   "entrypoints": [
     "static/css/main.93462b86.css",
-    "static/js/main.232a4048.js"
+    "static/js/main.96a52d68.js"
   ]
 }

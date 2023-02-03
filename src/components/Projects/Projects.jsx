@@ -135,7 +135,7 @@ export default function Projects() {
             }`}
             onClick={() => imageGalleryProjectSelect(1)}
           >
-            Quiz side
+            Quiz
           </button>
 
           {/* Button for quiz site Rock paper scissors site*/}

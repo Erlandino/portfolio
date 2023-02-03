@@ -24,9 +24,9 @@ export default function AboutMe() {
               <br />
               <br />
               Jeg liker også å jobbe med javascript siden kode språket er ganske logisk. Dette gjør
-              at man raskt finner løsninger på hvordan man kan skape noe. Hovedfokus da blir jo å
+              at man raskt finner løsninger på hvordan man kan skape noe. Hovedfokus blir jo da å
               optimalisere koden slik at den blir leselig, kort og forstålig. Og når jeg da oppnår
-              en effectiv kode for et proejekt føles det godt.
+              en effectiv føles det ganske godt.
             </p>
           </article>
           {/* Linebreak */}

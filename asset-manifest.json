@@ -1,35 +1,35 @@
 {
   "files": {
     "main.css": "/portofolio/static/css/main.93462b86.css",
-    "main.js": "/portofolio/static/js/main.96a52d68.js",
+    "main.js": "/portofolio/static/js/main.f9254265.js",
     "static/media/photo.JPG": "/portofolio/static/media/photo.ac881ab3669b80443678.JPG",
     "static/media/jule-nedtelling.png": "/portofolio/static/media/jule-nedtelling.46c3022fabb0e5490d3e.png",
     "static/media/julehilse.png": "/portofolio/static/media/julehilse.b8282d09d431ea924687.png",
+    "static/media/jule-nedtelling-mobile.png": "/portofolio/static/media/jule-nedtelling-mobile.24e0bb21571a0035ba82.png",
     "static/media/front-page.png": "/portofolio/static/media/front-page.e94738ebaa4eb1882069.png",
     "static/media/result-page.png": "/portofolio/static/media/result-page.6efa3c800cdb279bc9b1.png",
-    "static/media/jule-nedtelling-mobile.png": "/portofolio/static/media/jule-nedtelling-mobile.a518b1893052362c8137.png",
     "static/media/rules.png": "/portofolio/static/media/rules.f747f5dd188d7e270659.png",
     "static/media/julehilser.png": "/portofolio/static/media/julehilser.a4b84f19ddf769f44f55.png",
-    "static/media/julehilser-mobile.png": "/portofolio/static/media/julehilser-mobile.c0170067fb5c773e3458.png",
-    "static/media/result-page-mobile.png": "/portofolio/static/media/result-page-mobile.e1f5b33ab920238559db.png",
-    "static/media/julehilse-mobile.png": "/portofolio/static/media/julehilse-mobile.87aefb9c292de76ee742.png",
-    "static/media/rules-mobile.png": "/portofolio/static/media/rules-mobile.ed42bd9ccc67f8e7e613.png",
-    "static/media/front-page-mobile.png": "/portofolio/static/media/front-page-mobile.84a1bd46cbf4c5a114d8.png",
+    "static/media/julehilse-mobile.png": "/portofolio/static/media/julehilse-mobile.b08c745922f60f2a09a0.png",
+    "static/media/julehilser-mobile.png": "/portofolio/static/media/julehilser-mobile.f44bae49b320c3c03b1f.png",
+    "static/media/front-page-mobile.png": "/portofolio/static/media/front-page-mobile.e84bda8e61334ee46211.png",
+    "static/media/result-page-mobile.png": "/portofolio/static/media/result-page-mobile.292608437f2fcd64414d.png",
+    "static/media/rules-mobile.png": "/portofolio/static/media/rules-mobile.a038763c4aea4bbd1a18.png",
     "static/media/solar-quiz-registration.png": "/portofolio/static/media/solar-quiz-registration.3427ef2e270398eaca62.png",
     "static/media/solar-quiz.png": "/portofolio/static/media/solar-quiz.6a8d64dff431aa03b969.png",
     "static/media/solar-quiz-result.png": "/portofolio/static/media/solar-quiz-result.e21e23862f1da8705ce5.png",
-    "static/media/solar-quiz-mobile.png": "/portofolio/static/media/solar-quiz-mobile.841a0cf3197c66c4f7e4.png",
-    "static/media/solar-quiz-result-mobile.png": "/portofolio/static/media/solar-quiz-result-mobile.0b3079b575569cadd1ef.png",
-    "static/media/solar-quiz-registration-mobile.png": "/portofolio/static/media/solar-quiz-registration-mobile.c3261d22ca2e9ddc77e5.png",
     "static/media/mail.png": "/portofolio/static/media/mail.55f90f90636fe1f4f97e.png",
+    "static/media/solar-quiz-mobile.png": "/portofolio/static/media/solar-quiz-mobile.b4c71124212d65565002.png",
+    "static/media/solar-quiz-registration-mobile.png": "/portofolio/static/media/solar-quiz-registration-mobile.4055cac351b45c425be0.png",
+    "static/media/solar-quiz-result-mobile.png": "/portofolio/static/media/solar-quiz-result-mobile.f5adfcdd07ff779db01f.png",
     "static/media/globe.svg": "/portofolio/static/media/globe.5945b794085de3abd70a61874a12f5a1.svg",
     "static/media/figma-logo.svg": "/portofolio/static/media/figma-logo.f52c5eaff479b77b7c05a3db521836e5.svg",
     "index.html": "/portofolio/index.html",
     "main.93462b86.css.map": "/portofolio/static/css/main.93462b86.css.map",
-    "main.96a52d68.js.map": "/portofolio/static/js/main.96a52d68.js.map"
+    "main.f9254265.js.map": "/portofolio/static/js/main.f9254265.js.map"
   },
   "entrypoints": [
     "static/css/main.93462b86.css",
-    "static/js/main.96a52d68.js"
+    "static/js/main.f9254265.js"
   ]
 }

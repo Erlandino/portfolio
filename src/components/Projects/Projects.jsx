@@ -1,32 +1,32 @@
 // Imports
 import Gallery from "./Gallery";
 
-// Flywing images imports
-import rockPaperScissorsOneMobile from "../../media/rock-paper-scissors/front-page-mobile.png";
-import rockPaperScissorsTwoMobile from "../../media/rock-paper-scissors/result-page-mobile.png";
-import rockPaperScissorsThreeMobile from "../../media/rock-paper-scissors/rules-mobile.png";
+// Christmas countdown images imports
+import julenNedtelling from "../../media/christmas-countdown/jule-nedtelling.png";
+import juleHilse from "../../media/christmas-countdown/julehilse.png";
+import juleHilser from "../../media/christmas-countdown/julehilser.png";
 
-import rockPaperScissorsOne from "../../media/rock-paper-scissors/front-page.png";
-import rockPaperScissorsTwo from "../../media/rock-paper-scissors/result-page.png";
-import rockPaperScissorsThree from "../../media/rock-paper-scissors/rules.png";
-
-// Streaming site images imports
-import christmasCountdownOneMobile from "../../media/christmas-countdown/jule-nedtelling-mobile.png";
-import christmasCountdownTwoMobile from "../../media/christmas-countdown/julehilse-mobile.png";
-import christmasCountdownThreeMobile from "../../media/christmas-countdown/julehilser-mobile.png";
-
-import christmasCountdownOne from "../../media/christmas-countdown/jule-nedtelling.png";
-import christmasCountdownTwo from "../../media/christmas-countdown/julehilse.png";
-import christmasCountdownThree from "../../media/christmas-countdown/julehilser.png";
+import julenNedtellingMobile from "../../media/christmas-countdown/jule-nedtelling-mobile.png";
+import juleHilseMobile from "../../media/christmas-countdown/julehilse-mobile.png";
+import juleHilserMobile from "../../media/christmas-countdown/julehilser-mobile.png";
 
 // Solar quiz images imports
-import solarQuizImageOneMobile from "../../media/solar-quiz/solar-quiz-registration-mobile.png";
-import solarQuizImageTwoMobile from "../../media/solar-quiz/solar-quiz-result-mobile.png";
-import solarQuizImageThreeMobile from "../../media/solar-quiz/solar-quiz-mobile.png";
+import solarQuizRegistration from "../../media/solar-quiz/solar-quiz-registration.png";
+import solarQuiz from "../../media/solar-quiz/solar-quiz.png";
+import solarQuizResult from "../../media/solar-quiz/solar-quiz-result.png";
 
-import solarQuizImageOne from "../../media/solar-quiz/solar-quiz-registration.png";
-import solarQuizImageTwo from "../../media/solar-quiz/solar-quiz-result.png";
-import solarQuizImageThree from "../../media/solar-quiz/solar-quiz.png";
+import solarQuizRegistrationMobile from "../../media/solar-quiz/solar-quiz-registration-mobile.png";
+import solarQuizMobile from "../../media/solar-quiz/solar-quiz-mobile.png";
+import solarQuizResultMobile from "../../media/solar-quiz/solar-quiz-result-mobile.png";
+
+// Rock paper scissors images imports
+import rockPaperScissorsFrontPage from "../../media/rock-paper-scissors/front-page.png";
+import rockPaperScissorsResultPage from "../../media/rock-paper-scissors/result-page.png";
+import rockPaperScissorsRules from "../../media/rock-paper-scissors/rules.png";
+
+import rockPaperScissorsFrontPageMobile from "../../media/rock-paper-scissors/front-page-mobile.png";
+import rockPaperScissorsResultPageMobile from "../../media/rock-paper-scissors/result-page-mobile.png";
+import rockPaperScissorsRulesMobile from "../../media/rock-paper-scissors/rules-mobile.png";
 
 // Icons import
 import githubIcon from "../../media/GitHub-Mark-32px.png";
@@ -38,8 +38,13 @@ import { useState, useEffect } from "react";
 
 // Projects component
 export default function Projects() {
-  // state that contains with of viewport
+  //contains an index of the projects array
+  const [imageSet, setImageSet] = useState(0);
+  //contains with of viewport
   const [width, setWidth] = useState(window.innerWidth);
+  // decides wether or not to display description
+  const [ifShowDesc, setIfShowDesc] = useState(false);
+
   useEffect(() => {
     // Sets the viewport width on width resize
     window.addEventListener("resize", () => {
@@ -52,13 +57,12 @@ export default function Projects() {
       });
   }, []);
 
+  // Adds class with transition effect to parameter on call
   const pullData = (data) => {
-    console.log(data); // LOGS DATA FROM CHILD
     data.classList.remove("projects__container__carouselContainer__imageChange");
     setTimeout(() =>
       data.classList.add("projects__container__carouselContainer__imageChange", 1000)
     );
-    // data.classList.remove("projects__container__carouselContainer__imageChange");
   };
 
   // Array with projects info, pictures and logos in objects
@@ -66,9 +70,9 @@ export default function Projects() {
   const projects = [
     {
       projectName: "Jule Nedtelling",
-      imageOne: width > 500 ? christmasCountdownOne : christmasCountdownOneMobile,
-      imageTwo: width > 500 ? christmasCountdownTwo : christmasCountdownTwoMobile,
-      imageThree: width > 500 ? christmasCountdownThree : christmasCountdownThreeMobile,
+      imageOne: width > 500 ? julenNedtelling : julenNedtellingMobile,
+      imageTwo: width > 500 ? juleHilse : juleHilseMobile,
+      imageThree: width > 500 ? juleHilser : juleHilserMobile,
       github: "https://github.com/Erlandino/Christmas-task",
       figma:
         "https://www.figma.com/file/cPIkeXKbLLojYG7EyJXObd/ChristmasCalender?node-id=2%3A33&t=voO52qHem3ftnr1A-1",
@@ -78,9 +82,9 @@ export default function Projects() {
     },
     {
       projectName: "Solar Quiz",
-      imageOne: width > 500 ? solarQuizImageOne : solarQuizImageOneMobile,
-      imageTwo: width > 500 ? solarQuizImageTwo : solarQuizImageTwoMobile,
-      imageThree: width > 500 ? solarQuizImageThree : solarQuizImageThreeMobile,
+      imageOne: width > 500 ? solarQuizRegistration : solarQuizRegistrationMobile,
+      imageTwo: width > 500 ? solarQuiz : solarQuizMobile,
+      imageThree: width > 500 ? solarQuizResult : solarQuizResultMobile,
       github: "https://github.com/Erlandino/autmn-project",
       figma:
         "https://www.figma.com/file/EG0HAnVadfGMGMQDkvoX8y/Design-quiz-site?node-id=40%3A4&t=iBoCdhVxGMewcCKF-1",
@@ -89,9 +93,9 @@ export default function Projects() {
     },
     {
       projectName: "Rock paper scissors",
-      imageOne: width > 500 ? rockPaperScissorsOne : rockPaperScissorsOneMobile,
-      imageTwo: width > 500 ? rockPaperScissorsTwo : rockPaperScissorsTwoMobile,
-      imageThree: width > 500 ? rockPaperScissorsThree : rockPaperScissorsThreeMobile,
+      imageOne: width > 500 ? rockPaperScissorsFrontPage : rockPaperScissorsFrontPageMobile,
+      imageTwo: width > 500 ? rockPaperScissorsResultPage : rockPaperScissorsResultPageMobile,
+      imageThree: width > 500 ? rockPaperScissorsRules : rockPaperScissorsRulesMobile,
       github: "https://github.com/Erlandino/Rock-paper-scissors",
       figma: "",
       webpage: "https://erlandino.github.io/Rock-paper-scissors/",
@@ -99,9 +103,6 @@ export default function Projects() {
         "Alle kjenner sikkert til stein saks papir spillet, her har jeg laget det for en nettside gjennom react. Jeg brukte da design og bilder fra frontendmentor.io for å laget dette spillet. Her måtte jeg også bruke hooks, men hoved utfordring var å gjøre siden responsive og animere elementer",
     },
   ];
-  // UseState that contains an index of the projects array above
-  const [imageSet, setImageSet] = useState(0);
-
   // sets imageSet to be the number in the index parameter, which will be the number that the function is called with
   function imageGalleryProjectSelect(index) {
     setImageSet((prevImageSet) => index);
@@ -119,35 +120,29 @@ export default function Projects() {
         <h1 className="projects__container__title">Prosjekter</h1>
         {/* Projects navigation container */}
         <div className="projects__container__navigation">
-          {/* Button for streaming site */}
-          <button
-            className={`projects__container__navigation__button ${
-              projectName === "Jule Nedtelling" && "projects__container__navigation__button-active"
-            }`}
-            onClick={() => imageGalleryProjectSelect(0)}
-          >
-            Jule nedtelling
-          </button>
-          {/* Button for quiz site */}
-          <button
-            className={`projects__container__navigation__button ${
-              projectName === "Solar Quiz" && "projects__container__navigation__button-active"
-            }`}
-            onClick={() => imageGalleryProjectSelect(1)}
-          >
-            Quiz
-          </button>
-
-          {/* Button for quiz site Rock paper scissors site*/}
-          <button
-            className={`projects__container__navigation__button ${
-              projectName === "Rock paper scissors" &&
-              "projects__container__navigation__button-active"
-            }`}
-            onClick={() => imageGalleryProjectSelect(2)}
-          >
-            Stein saks papir
-          </button>
+          {/* Creates a button for each object in array */}
+          {projects.map((currentElement, index, arr) => {
+            return (
+              // Template for button to create
+              <button
+                key={index}
+                className={
+                  `projects__container__navigation__button ${
+                    currentElement.projectName === projectName &&
+                    "projects__container__navigation__button-active"
+                  }` /* Sets class of button to active if clicked */
+                }
+                onClick={
+                  () =>
+                    imageGalleryProjectSelect(
+                      index
+                    ) /* Calls function with index of current object */
+                }
+              >
+                {currentElement.projectName /* Navigation name */}
+              </button>
+            );
+          })}
         </div>
         {/* Gallery component, images are being sent as props to create a gallery in the component*/}
         <Gallery
@@ -155,6 +150,8 @@ export default function Projects() {
           firstImage={imageOne}
           secondImage={imageTwo}
           thirdImage={imageThree}
+          setIfShowDesc={setIfShowDesc}
+          imageSet={imageSet}
         />
         {/* Link list */}
         <ul className="projects__container__links">
@@ -224,10 +221,13 @@ export default function Projects() {
           )}
         </ul>
       </div>
-      <div className="projects__description">
-        <h1 className="projects__description__title">{projectName}</h1>
-        <p className="projects__description__paragraph">{description}</p>
-      </div>
+      {/* Description for the project currently displaying */}
+      {ifShowDesc && (
+        <div className="projects__description">
+          <h1 className="projects__description__title">{projectName}</h1>
+          <p className="projects__description__paragraph">{description}</p>
+        </div>
+      )}
     </section>
   );
 }

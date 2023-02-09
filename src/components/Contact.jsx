@@ -27,8 +27,6 @@ export default function Contact() {
     const emailValue = form.current.childNodes[5].value;
     const messageValue = form.current.childNodes[8].value;
 
-    // form.current.childNodes[3].style.display = "block"
-
     // Calls verifiyInput with the input variables and names accordingly
     verifyInput("navn", nameValue, 2);
     verifyInput("email", emailValue, 5);
@@ -43,7 +41,6 @@ export default function Contact() {
         .then(
           (result) => {
             // if Successful
-            console.log(result.text);
             for (let i = 0; i < 11; i++) {
               form.current.childNodes[i].style.display = "none";
             }
@@ -120,13 +117,7 @@ export default function Contact() {
           Navn
         </label>
         {/* Name input */}
-        <input
-          type="text"
-          id="user_name"
-          name="user_name"
-          // onBlur={verifyInput}
-          className="contact__form__input"
-        />
+        <input type="text" id="user_name" name="user_name" className="contact__form__input" />
         {/* Name error message */}
         <p style={{ display: "none" }} className="contact__form__errorMessage"></p>
 

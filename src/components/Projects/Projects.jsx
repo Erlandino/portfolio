@@ -32,6 +32,8 @@ import rockPaperScissorsRulesMobile from "../../media/rock-paper-scissors/rules-
 import githubIcon from "../../media/GitHub-Mark-32px.png";
 import figmaIcon from "../../media/figma-logo.svg";
 import globeIcon from "../../media/globe.svg";
+import arrowLeft from "../../media/arrow-left.svg";
+import arrowRight from "../../media/arrow-right.svg";
 
 // hooks
 import { useState, useEffect } from "react";
@@ -39,35 +41,13 @@ import { useState, useEffect } from "react";
 // Projects component
 export default function Projects() {
   //contains an index of the projects array
-  const [imageSet, setImageSet] = useState(0);
+  const [imageSet, setImageSet] = useState(1);
   //contains with of viewport
   const [width, setWidth] = useState(window.innerWidth);
   // decides wether or not to display description
   const [ifShowDesc, setIfShowDesc] = useState(false);
-
-  useEffect(() => {
-    // Sets the viewport width on width resize
-    window.addEventListener("resize", () => {
-      setWidth((prevState) => window.innerWidth);
-    });
-    // cleanup
-    return () =>
-      window.removeEventListener("resize", () => {
-        setWidth((prevState) => window.innerWidth);
-      });
-  }, []);
-
-  // Adds class with transition effect to parameter on call
-  const pullData = (data) => {
-    data.classList.remove("projects__container__carouselContainer__imageChange");
-    setTimeout(() =>
-      data.classList.add("projects__container__carouselContainer__imageChange", 1000)
-    );
-  };
-
-  // Array with projects info, pictures and logos in objects
-  // changes image according to the size of viewport width
-  const projects = [
+  // useState with array with projects info, pictures and logos in objects
+  const [projects, setProjects] = useState([
     {
       projectName: "Jule Nedtelling",
       imageOne: width > 500 ? julenNedtelling : julenNedtellingMobile,
@@ -102,7 +82,40 @@ export default function Projects() {
       description:
         "Alle kjenner sikkert til stein saks papir spillet, her har jeg laget det for en nettside gjennom react. Jeg brukte da design og bilder fra frontendmentor.io for å laget dette spillet. Her måtte jeg også bruke hooks, men hoved utfordring var å gjøre siden responsive og animere elementer",
     },
-  ];
+  ]);
+
+  function sortingProjects(direction) {
+    setProjects((prevProjects) => {
+      if (direction === "right") {
+        return [prevProjects[1], prevProjects[2], prevProjects[0]];
+      }
+      if (direction === "left") {
+        return [prevProjects[2], prevProjects[0], prevProjects[1]];
+      }
+    });
+  }
+
+  // changes image according to the size of viewport width
+  useEffect(() => {
+    // Sets the viewport width on width resize
+    window.addEventListener("resize", () => {
+      setWidth((prevState) => window.innerWidth);
+    });
+    // cleanup
+    return () =>
+      window.removeEventListener("resize", () => {
+        setWidth((prevState) => window.innerWidth);
+      });
+  }, []);
+
+  // Adds class with transition effect to parameter on call
+  const pullData = (data) => {
+    data.classList.remove("projects__container__carouselContainer__imageChange");
+    setTimeout(() =>
+      data.classList.add("projects__container__carouselContainer__imageChange", 1000)
+    );
+  };
+
   // sets imageSet to be the number in the index parameter, which will be the number that the function is called with
   function imageGalleryProjectSelect(index) {
     setImageSet((prevImageSet) => index);
@@ -111,6 +124,8 @@ export default function Projects() {
   // Destructuring of projects object
   const { imageOne, imageTwo, imageThree, github, figma, projectName, description, webpage } =
     projects[imageSet];
+
+  console.log(projects);
   return (
     // Section
     <section className="projects" id="projects">
@@ -122,26 +137,84 @@ export default function Projects() {
         <div className="projects__container__navigation">
           {/* Creates a button for each object in array */}
           {projects.map((currentElement, index, arr) => {
-            return (
-              // Template for button to create
-              <button
-                key={index}
-                className={
-                  `projects__container__navigation__button ${
-                    currentElement.projectName === projectName &&
-                    "projects__container__navigation__button-active"
-                  }` /* Sets class of button to active if clicked */
-                }
-                onClick={
-                  () =>
-                    imageGalleryProjectSelect(
-                      index
-                    ) /* Calls function with index of current object */
-                }
-              >
-                {currentElement.projectName /* Navigation name */}
-              </button>
-            );
+            // Template for button to create
+            if (index === 0) {
+              return (
+                <button
+                  key={index}
+                  className={
+                    `projects__container__navigation__button ${
+                      currentElement.projectName === projectName &&
+                      "projects__container__navigation__button-active"
+                    }` /* Sets class of button to active if clicked */
+                  }
+                  onClick={() => {
+                    sortingProjects("left");
+                  }}
+                >
+                  {currentElement.projectName /* Navigation name */}
+                </button>
+              );
+            } else if (index === 1) {
+              return (
+                <div key={index + 1} className="projects__container__navigation__center">
+                  <img
+                    key={index + 2}
+                    src={arrowLeft}
+                    alt="arrow that points to the left"
+                    className="projects__container__navigation__arrowContainer__arrow projects__container__navigation__arrowContainer__arrow--left"
+                    onClick={() => {
+                      sortingProjects("left");
+                    }}
+                  />
+
+                  <button
+                    key={index + 3}
+                    className={
+                      `projects__container__navigation__button ${
+                        currentElement.projectName === projectName &&
+                        "projects__container__navigation__button-active"
+                      }` /* Sets class of button to active if clicked */
+                    }
+                    onClick={
+                      () =>
+                        imageGalleryProjectSelect(
+                          index
+                        ) /* Calls function with index of current object */
+                    }
+                  >
+                    {currentElement.projectName /* Navigation name */}
+                  </button>
+
+                  <img
+                    key={index + 4}
+                    src={arrowRight}
+                    alt="arrow that points to the right"
+                    className="projects__container__navigation__arrowContainer__arrow projects__container__navigation__arrowContainer__arrow--right"
+                    onClick={() => {
+                      sortingProjects("right");
+                    }}
+                  />
+                </div>
+              );
+            } else {
+              return (
+                <button
+                  key={index + 5}
+                  className={
+                    `projects__container__navigation__button ${
+                      currentElement.projectName === projectName &&
+                      "projects__container__navigation__button-active"
+                    }` /* Sets class of button to active if clicked */
+                  }
+                  onClick={() => {
+                    sortingProjects("right");
+                  }}
+                >
+                  {currentElement.projectName /* Navigation name */}
+                </button>
+              );
+            }
           })}
         </div>
         {/* Gallery component, images are being sent as props to create a gallery in the component*/}
@@ -151,7 +224,7 @@ export default function Projects() {
           secondImage={imageTwo}
           thirdImage={imageThree}
           setIfShowDesc={setIfShowDesc}
-          imageSet={imageSet}
+          projects={projects}
         />
         {/* Link list */}
         <ul className="projects__container__links">
@@ -222,12 +295,10 @@ export default function Projects() {
         </ul>
       </div>
       {/* Description for the project currently displaying */}
-      {ifShowDesc && (
-        <div className="projects__description">
-          <h1 className="projects__description__title">{projectName}</h1>
-          <p className="projects__description__paragraph">{description}</p>
-        </div>
-      )}
+      <div className={`projects__description ${ifShowDesc && "projects__description--active"}`}>
+        <h1 className="projects__description__title">{projectName}</h1>
+        <p className="projects__description__paragraph">{description}</p>
+      </div>
     </section>
   );
 }

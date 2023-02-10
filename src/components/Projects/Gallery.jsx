@@ -5,7 +5,7 @@ import { useRef, useEffect } from "react";
 // Gallery component
 export default function Gallery(props) {
   // Destructuring of props object
-  const { firstImage, secondImage, thirdImage, pullData, setIfShowDesc, imageSet } = props;
+  const { firstImage, secondImage, thirdImage, pullData, setIfShowDesc, projects } = props;
 
   // useRef hook, gets dom element
   const imageRef = useRef(null);
@@ -13,7 +13,7 @@ export default function Gallery(props) {
   useEffect(() => {
     const imageDom = imageRef.current.imageGallery.current;
     pullData(imageDom);
-  }, [imageSet]);
+  }, [projects]);
 
   // Array of all the sets of images
   const images = [

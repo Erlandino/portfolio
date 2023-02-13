@@ -125,7 +125,6 @@ export default function Projects() {
   const { imageOne, imageTwo, imageThree, github, figma, projectName, description, webpage } =
     projects[imageSet];
 
-  console.log(projects);
   return (
     // Section
     <section className="projects" id="projects">
@@ -225,6 +224,7 @@ export default function Projects() {
           thirdImage={imageThree}
           setIfShowDesc={setIfShowDesc}
           projects={projects}
+          ifShowDesc={ifShowDesc}
         />
         {/* Link list */}
         <ul className="projects__container__links">
@@ -295,7 +295,11 @@ export default function Projects() {
         </ul>
       </div>
       {/* Description for the project currently displaying */}
-      <div className={`projects__description ${ifShowDesc && "projects__description--active"}`}>
+      <div
+        className={`projects__description ${ifShowDesc && "projects__description--active"} ${
+          !ifShowDesc && "projects__description--hidden"
+        }`}
+      >
         <h1 className="projects__description__title">{projectName}</h1>
         <p className="projects__description__paragraph">{description}</p>
       </div>

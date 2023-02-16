@@ -5,18 +5,17 @@ import { useRef, useEffect } from "react";
 // Gallery component
 export default function Gallery(props) {
   // Destructuring of props object
-  const { firstImage, secondImage, thirdImage, pullData } = props;
+  const { firstImage, secondImage, thirdImage, pullData, setIfShowDesc, projects, ifShowDesc } =
+    props;
 
+  // useRef hook, gets dom element
   const imageRef = useRef(null);
 
   useEffect(() => {
     const imageDom = imageRef.current.imageGallery.current;
     pullData(imageDom);
-  });
+  }, [projects]);
 
-  function logo() {
-    console.log("slide");
-  }
   // Array of all the sets of images
   const images = [
     {
@@ -33,8 +32,21 @@ export default function Gallery(props) {
   return (
     // Image carousel container
     <div className="projects__container__carouselContainer">
+      {/* button to hide/display description */}
+      <button
+        className="projects__showDescription"
+        onClick={() => setIfShowDesc((prevState) => !prevState)}
+      >
+        {ifShowDesc ? "Hide Details" : "Show details"}
+      </button>
       {/* Image carousel */}
-      <ImageGallery onBeforeSlide={logo} items={images} ref={imageRef} />
+      <ImageGallery
+        items={images}
+        ref={imageRef}
+        showPlayButton={false}
+        showFullscreenButton={false}
+        showBullets={true}
+      />
     </div>
   );
 }

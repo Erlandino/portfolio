@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 
 // Navbar component
 export default function Navbar() {
-  // useStates
+  // UseStates
   const [showNavbar, setShowNavbar] = useState(false);
   const [ifHover, setIfHover] = useState(false);
 
@@ -16,7 +16,7 @@ export default function Navbar() {
     }
   }
 
-  // useEffect function, content will only be run once during first load
+  // UseEffect function, content will only be run once during first load
   useEffect(() => {
     // Checks if the window width is less than 600 px and collapses the navbar if true
     window.innerWidth <= 600 && setShowNavbar(false);

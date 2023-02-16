@@ -1,5 +1,5 @@
 // Imports
-import photo from "../media/photo.jpg";
+import photo from "../media/photo.JPG";
 import donwload from "../media/material-symbol-download.svg";
 
 // Introduction component

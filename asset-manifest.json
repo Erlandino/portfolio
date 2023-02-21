@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/portofolio/static/css/main.bd9e59a2.css",
-    "main.js": "/portofolio/static/js/main.c82e2eba.js",
-    "static/media/photo.JPG": "/portofolio/static/media/photo.2391e15831479d2159bc.JPG",
+    "main.css": "/portofolio/static/css/main.0d062e99.css",
+    "main.js": "/portofolio/static/js/main.21ffa2e3.js",
+    "static/media/photo.jpg": "/portofolio/static/media/photo.2391e15831479d2159bc.jpg",
     "static/media/jule-nedtelling.png": "/portofolio/static/media/jule-nedtelling.46c3022fabb0e5490d3e.png",
     "static/media/julehilse.png": "/portofolio/static/media/julehilse.b8282d09d431ea924687.png",
     "static/media/jule-nedtelling-mobile.png": "/portofolio/static/media/jule-nedtelling-mobile.fa7974cef520ff34b067.png",
@@ -28,11 +28,11 @@
     "static/media/figma-logo.svg": "/portofolio/static/media/figma-logo.f52c5eaff479b77b7c05a3db521836e5.svg",
     "index.html": "/portofolio/index.html",
     "static/media/material-symbol-download.svg": "/portofolio/static/media/material-symbol-download.39c97fd88daa8aadae9d55b5a24439c4.svg",
-    "main.bd9e59a2.css.map": "/portofolio/static/css/main.bd9e59a2.css.map",
-    "main.c82e2eba.js.map": "/portofolio/static/js/main.c82e2eba.js.map"
+    "main.0d062e99.css.map": "/portofolio/static/css/main.0d062e99.css.map",
+    "main.21ffa2e3.js.map": "/portofolio/static/js/main.21ffa2e3.js.map"
   },
   "entrypoints": [
-    "static/css/main.bd9e59a2.css",
-    "static/js/main.c82e2eba.js"
+    "static/css/main.0d062e99.css",
+    "static/js/main.21ffa2e3.js"
   ]
 }

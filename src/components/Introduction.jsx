@@ -1,6 +1,7 @@
 // Imports
 import photo from "../media/photo.jpg";
 import donwload from "../media/material-symbol-download.svg";
+import cv from "../media/cv-erlend.pdf";
 
 // Introduction component
 // Front page content
@@ -24,10 +25,11 @@ export default function Introduction() {
         {/* Img element containing a photo of myself */}
         <img className="introduction__container__image" src={photo} alt="Face of myself" />
       </div>
-      <button className="introduction__cvDownload">
-        Last ned CV{" "}
+
+      <a href={cv} download="cv-erlend" className="introduction__cvDownload">
+        Last ned CV
         <img src={donwload} alt="download icon" className="introduction__cvDownload__img" />
-      </button>
+      </a>
     </header>
   );
 }

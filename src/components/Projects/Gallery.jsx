@@ -37,7 +37,7 @@ export default function Gallery(props) {
         className="projects__showDescription"
         onClick={() => setIfShowDesc((prevState) => !prevState)}
       >
-        {ifShowDesc ? "Hide Details" : "Show details"}
+        {ifShowDesc ? "Vis detaljer" : "Skjul detaljer"}
       </button>
       {/* Image carousel */}
       <ImageGallery

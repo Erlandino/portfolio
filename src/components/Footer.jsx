@@ -37,7 +37,7 @@ export default function Footer() {
             target="_blanc"
           >
             {/* Image of figma icon */}
-            <img className="footer__list__item__link__img" src={figmaIon} alt="" /> Portofolio
+            <img className="footer__list__item__link__img" src={figmaIon} alt="" /> Portfolio
           </a>
         </li>
       </ul>

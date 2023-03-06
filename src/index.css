@@ -109,6 +109,7 @@ body {
     gap: 50px;
     align-self: center;
     width: 70%;
+    max-width: 300px;
   }
   .introduction__container__image {
     height: auto;

@@ -1,8 +1,8 @@
 {
-  "name": "portofolio",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://erlandino.github.io/portofolio",
+  "homepage": "https://erlandino.github.io/portfolio",
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "@testing-library/jest-dom": "^5.16.5",

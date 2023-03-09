@@ -162,6 +162,9 @@ body {
   height: 100%;
   gap: 40px;
 }
+.aboutMe__container__articles__article__paragraph {
+  font-size: 22px;
+}
 @media screen and (max-width: 600px) {
   .aboutMe__container__articles {
     flex-direction: column;

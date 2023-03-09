@@ -18,6 +18,7 @@ export default function Introduction() {
           <p className="introduction__container__text__paragraph">
             Mitt navn er <strong>Erlend</strong> og jeg er en junior frontend utvikler
           </p>
+          <br></br>
           {/* 
             I tillegg har jeg stor interesse for backend, og fordyper meg i MERN-stacken. 
             Jeg trives veldig godt med React og JavaScript, men akkurat nå bruker jeg mest tid på … hvorfor…

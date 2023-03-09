@@ -14,18 +14,15 @@ export default function Introduction() {
         {/* Introduction text container */}
         <div className="introduction__container__text">
           {/* Introduction text */}
-          <h1 className="introduction__container__text__title">Hei</h1>
+          <h1 className="introduction__container__text__title">Hei,</h1>
+          <br />
           <p className="introduction__container__text__paragraph">
             Mitt navn er <strong>Erlend</strong> og jeg er en junior frontend utvikler
           </p>
-          <br></br>
-          {/* 
-            I tillegg har jeg stor interesse for backend, og fordyper meg i MERN-stacken. 
-            Jeg trives veldig godt med React og JavaScript, men akkurat nå bruker jeg mest tid på … hvorfor…
-           */}
+          <br />
           <p className="introduction__container__text__paragraph introduction__container__text__paragraph--Undertext">
             Jeg har stor interesse for backend, akkurat nå fordyper jeg meg i MERN-stacken hvor jeg
-            i hovedfokus holder på med RESTfull apis. Jeg trives også veldig godt med React og
+            i hovedfokus holder på med RESTful api's. Jeg trives også veldig godt med React og
             Javascript.
           </p>
         </div>

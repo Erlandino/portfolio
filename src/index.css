@@ -1,4 +1,5 @@
 @import "~react-image-gallery/styles/css/image-gallery.css";
+/* Removes base margin and padding on elements and makes all box sizing: border-box;*/
 * {
   margin: 0;
   padding: 0;
@@ -10,24 +11,9 @@ body,
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 body {
-  /* background: linear-gradient(140deg, #00affa 10%, #ffffff 10%, #ffffff 34%, #00b2ff 34%, #00b2ff 46%, rgba(255, 255, 255, 0) 46%),
-    linear-gradient(40deg, #ffffff 22.15%, #00b2ff 22.15%, #00b2ff 32.86%, #ffffff 32.86%); */
-  background-image: linear-gradient(
-    to right bottom,
-    #00affa,
-    #2d9ad9,
-    #3a86b9,
-    #3f739a,
-    #3f607c,
-    #50657d,
-    #5e6b7d,
-    #6a717d,
-    #8e929c,
-    #b4b5bc,
-    #d9d9dd,
-    #ffffff
-  );
+  background-color: #3a86b9;
 }
+
 /* weatherApi */
 .weatherApi {
   position: absolute;
@@ -35,6 +21,7 @@ body {
   padding: 40px;
   color: white;
   font-size: 30px;
+  z-index: 99;
 }
 .weatherApi__iconTempContainer {
   display: flex;
@@ -66,7 +53,8 @@ body {
 .introduction__container__image {
   width: 50%;
   max-width: 350px;
-  border-radius: 7.5%;
+  border-radius: 5px;
+  filter: grayscale(100%);
 }
 .introduction__container__text {
   max-width: 50%;
@@ -79,7 +67,6 @@ body {
 }
 .introduction__container__text__paragraph--Undertext {
   font-size: 22px;
-  color: hsl(0, 0%, 80%);
 }
 
 .introduction__cvDownload {
@@ -106,7 +93,7 @@ body {
   .introduction__container {
     flex-direction: column-reverse;
     justify-content: center;
-    gap: 50px;
+    gap: 10px;
     align-self: center;
     width: 70%;
     max-width: 300px;
@@ -159,6 +146,9 @@ body {
   width: 100%;
   height: 100%;
   gap: 40px;
+}
+.aboutMe__container__articles__article__paragraph {
+  font-size: 22px;
 }
 @media screen and (max-width: 600px) {
   .aboutMe__container__articles {

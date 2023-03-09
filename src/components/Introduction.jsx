@@ -16,10 +16,16 @@ export default function Introduction() {
           {/* Introduction text */}
           <h1 className="introduction__container__text__title">Hei</h1>
           <p className="introduction__container__text__paragraph">
-            mitt navn er <strong>Erlend</strong> og jeg er en frontend utvikler
+            Mitt navn er <strong>Erlend</strong> og jeg er en junior frontend utvikler
           </p>
+          {/* 
+            I tillegg har jeg stor interesse for backend, og fordyper meg i MERN-stacken. 
+            Jeg trives veldig godt med React og JavaScript, men akkurat nå bruker jeg mest tid på … hvorfor…
+           */}
           <p className="introduction__container__text__paragraph introduction__container__text__paragraph--Undertext">
-            Har stor interesse for å utforske mer mot backend
+            Jeg har stor interesse for backend, akkurat nå fordyper jeg meg i MERN-stacken hvor jeg
+            i hovedfokus holder på med RESTfull apis. Jeg trives også veldig godt med React og
+            Javascript.
           </p>
         </div>
         {/* Img element containing a photo of myself */}

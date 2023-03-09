@@ -10,9 +10,10 @@ body,
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 body {
+  background-color: #3a86b9;
   /* background: linear-gradient(140deg, #00affa 10%, #ffffff 10%, #ffffff 34%, #00b2ff 34%, #00b2ff 46%, rgba(255, 255, 255, 0) 46%),
     linear-gradient(40deg, #ffffff 22.15%, #00b2ff 22.15%, #00b2ff 32.86%, #ffffff 32.86%); */
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to right bottom,
     #00affa,
     #2d9ad9,
@@ -26,7 +27,7 @@ body {
     #b4b5bc,
     #d9d9dd,
     #ffffff
-  );
+  ); */
 }
 /* weatherApi */
 .weatherApi {
@@ -66,7 +67,8 @@ body {
 .introduction__container__image {
   width: 50%;
   max-width: 350px;
-  border-radius: 7.5%;
+  border-radius: 5px;
+  filter: grayscale(100%);
 }
 .introduction__container__text {
   max-width: 50%;
@@ -79,7 +81,7 @@ body {
 }
 .introduction__container__text__paragraph--Undertext {
   font-size: 22px;
-  color: hsl(0, 0%, 80%);
+  /* color: hsl(0, 0%, 80%); */
 }
 
 .introduction__cvDownload {

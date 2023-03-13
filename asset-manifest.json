@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.cc3698f7.css",
+    "main.css": "/portfolio/static/css/main.0c722ef0.css",
     "main.js": "/portfolio/static/js/main.6fc89ec2.js",
     "static/media/photo.jpg": "/portfolio/static/media/photo.2391e15831479d2159bc.jpg",
     "static/media/jule-nedtelling.png": "/portfolio/static/media/jule-nedtelling.46c3022fabb0e5490d3e.png",
@@ -29,11 +29,11 @@
     "static/media/figma-logo.svg": "/portfolio/static/media/figma-logo.f52c5eaff479b77b7c05a3db521836e5.svg",
     "index.html": "/portfolio/index.html",
     "static/media/material-symbol-download.svg": "/portfolio/static/media/material-symbol-download.39c97fd88daa8aadae9d55b5a24439c4.svg",
-    "main.cc3698f7.css.map": "/portfolio/static/css/main.cc3698f7.css.map",
+    "main.0c722ef0.css.map": "/portfolio/static/css/main.0c722ef0.css.map",
     "main.6fc89ec2.js.map": "/portfolio/static/js/main.6fc89ec2.js.map"
   },
   "entrypoints": [
-    "static/css/main.cc3698f7.css",
+    "static/css/main.0c722ef0.css",
     "static/js/main.6fc89ec2.js"
   ]
 }

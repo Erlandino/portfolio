@@ -196,13 +196,13 @@ body {
   z-index: -1;
 }
 .projects__description--hidden {
-  transition: visibility 2s;
-  animation: 2s rollEffectEnd reverse;
+  transition: visibility 0.5s;
+  animation: 0.5s rollEffectEnd reverse;
 }
 
 .projects__description--active {
   visibility: visible;
-  animation: 4s rollEffect;
+  animation: 1s rollEffect;
   height: 100%;
 }
 @keyframes rollEffectEnd {

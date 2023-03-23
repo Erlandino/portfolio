@@ -1,8 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.0c722ef0.css",
-    "main.js": "/portfolio/static/js/main.6fc89ec2.js",
-    "static/media/photo.jpg": "/portfolio/static/media/photo.2391e15831479d2159bc.jpg",
+    "main.js": "/portfolio/static/js/main.21998e98.js",
     "static/media/jule-nedtelling.png": "/portfolio/static/media/jule-nedtelling.46c3022fabb0e5490d3e.png",
     "static/media/julehilse.png": "/portfolio/static/media/julehilse.b8282d09d431ea924687.png",
     "static/media/jule-nedtelling-mobile.png": "/portfolio/static/media/jule-nedtelling-mobile.fa7974cef520ff34b067.png",
@@ -23,6 +22,7 @@
     "static/media/solar-quiz-registration-mobile.png": "/portfolio/static/media/solar-quiz-registration-mobile.4055cac351b45c425be0.png",
     "static/media/solar-quiz-result-mobile.png": "/portfolio/static/media/solar-quiz-result-mobile.f5adfcdd07ff779db01f.png",
     "static/media/cv-erlend.pdf": "/portfolio/static/media/cv-erlend.ddf8ca52cfc150ea9bda.pdf",
+    "static/media/photo.webp": "/portfolio/static/media/photo.b9a866dc46d65a25b06f.webp",
     "static/media/globe.svg": "/portfolio/static/media/globe.5945b794085de3abd70a61874a12f5a1.svg",
     "static/media/arrow-right.svg": "/portfolio/static/media/arrow-right.f9c7104cc26c9115c460c38e55624fb0.svg",
     "static/media/arrow-left.svg": "/portfolio/static/media/arrow-left.78ab4541b8704a3422eb263492a14ff7.svg",
@@ -30,10 +30,10 @@
     "index.html": "/portfolio/index.html",
     "static/media/material-symbol-download.svg": "/portfolio/static/media/material-symbol-download.39c97fd88daa8aadae9d55b5a24439c4.svg",
     "main.0c722ef0.css.map": "/portfolio/static/css/main.0c722ef0.css.map",
-    "main.6fc89ec2.js.map": "/portfolio/static/js/main.6fc89ec2.js.map"
+    "main.21998e98.js.map": "/portfolio/static/js/main.21998e98.js.map"
   },
   "entrypoints": [
     "static/css/main.0c722ef0.css",
-    "static/js/main.6fc89ec2.js"
+    "static/js/main.21998e98.js"
   ]
 }

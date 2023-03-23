@@ -1,5 +1,5 @@
 // Imports
-import photo from "../media/photo.jpg";
+import photo from "../media/photo.webp";
 import donwload from "../media/material-symbol-download.svg";
 import cv from "../media/cv-erlend.pdf";
 

@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.0c722ef0.css",
-    "main.js": "/portfolio/static/js/main.21998e98.js",
+    "main.js": "/portfolio/static/js/main.57a8cc33.js",
     "static/media/jule-nedtelling.png": "/portfolio/static/media/jule-nedtelling.46c3022fabb0e5490d3e.png",
     "static/media/julehilse.png": "/portfolio/static/media/julehilse.b8282d09d431ea924687.png",
     "static/media/jule-nedtelling-mobile.png": "/portfolio/static/media/jule-nedtelling-mobile.fa7974cef520ff34b067.png",
+    "static/media/cv-erlend.pdf": "/portfolio/static/media/cv-erlend.ccc265aecac1b8ecaffc.pdf",
     "static/media/front-page.png": "/portfolio/static/media/front-page.e94738ebaa4eb1882069.png",
     "static/media/result-page.png": "/portfolio/static/media/result-page.6efa3c800cdb279bc9b1.png",
     "static/media/rules.png": "/portfolio/static/media/rules.f747f5dd188d7e270659.png",
@@ -21,7 +22,6 @@
     "static/media/solar-quiz-mobile.png": "/portfolio/static/media/solar-quiz-mobile.b4c71124212d65565002.png",
     "static/media/solar-quiz-registration-mobile.png": "/portfolio/static/media/solar-quiz-registration-mobile.4055cac351b45c425be0.png",
     "static/media/solar-quiz-result-mobile.png": "/portfolio/static/media/solar-quiz-result-mobile.f5adfcdd07ff779db01f.png",
-    "static/media/cv-erlend.pdf": "/portfolio/static/media/cv-erlend.ddf8ca52cfc150ea9bda.pdf",
     "static/media/photo.webp": "/portfolio/static/media/photo.b9a866dc46d65a25b06f.webp",
     "static/media/globe.svg": "/portfolio/static/media/globe.5945b794085de3abd70a61874a12f5a1.svg",
     "static/media/arrow-right.svg": "/portfolio/static/media/arrow-right.f9c7104cc26c9115c460c38e55624fb0.svg",
@@ -30,10 +30,10 @@
     "index.html": "/portfolio/index.html",
     "static/media/material-symbol-download.svg": "/portfolio/static/media/material-symbol-download.39c97fd88daa8aadae9d55b5a24439c4.svg",
     "main.0c722ef0.css.map": "/portfolio/static/css/main.0c722ef0.css.map",
-    "main.21998e98.js.map": "/portfolio/static/js/main.21998e98.js.map"
+    "main.57a8cc33.js.map": "/portfolio/static/js/main.57a8cc33.js.map"
   },
   "entrypoints": [
     "static/css/main.0c722ef0.css",
-    "static/js/main.21998e98.js"
+    "static/js/main.57a8cc33.js"
   ]
 }
